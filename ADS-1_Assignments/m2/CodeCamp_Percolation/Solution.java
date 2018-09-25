@@ -119,7 +119,7 @@ class Percolation {
    *
    * @return     boolean
    */
-  public boolean percolates() {
+  public boolean checkPercolates() {
     // does the system percolate?
     return percCheck.connected(top, bottom);
   }
@@ -153,6 +153,6 @@ public final class Solution {
       int q = scan.nextInt();
       perc.open(p - 1, q - 1);
     }
-    System.out.println(perc.percolates());
+    System.out.println(perc.checkPercolates());
   }
 }
