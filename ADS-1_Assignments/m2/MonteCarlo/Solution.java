@@ -1,5 +1,9 @@
 import java.util.Scanner;
 import java.util.Random;
+/**
+ * @author : Rohithmarktrikcs.
+ * Main file for simulation.
+ */
 
 /**
  * Class for percolation.
@@ -32,26 +36,6 @@ class Percolation {
      */
     private WeightedUnion percCheck;
     /**
-     * randomCheck variable.
-     */
-    private int randomCheck;
-    /**
-     * Gets the information about randomCheck.
-     *
-     * @return     randomCheck value.
-     */
-    public int getrandomCheck() {
-        return randomCheck;
-    }
-    /**
-     * Sets the randomCheck variable.
-     *
-     * @param      randomCheck  The random check
-     */
-    public void setrandomCheck(int randomCheck) {
-        this.randomCheck = randomCheck;
-    }
-    /**
      * Gets the count.
      *
      * @return     The count.
@@ -80,7 +64,6 @@ class Percolation {
         bottom = num * num + 1;
         percCheck = new WeightedUnion(num * num + 2);
         n = num;
-        randomCheck = 0;
     }
 
     /**
@@ -189,13 +172,10 @@ public final class Solution {
         System.out.print("Enter the order of matrix: ");
         int num = scan.nextInt();
         System.out.println(num);
-        int check = 0;
         Percolation perc = new Percolation(num);
         while (true) {
             int p = rg.nextInt(num)+1;
             int q = rg.nextInt(num)+1;
-            check += 1;
-            perc.setrandomCheck(check);
             perc.open(p - 1, q - 1);
             if (perc.checkPercolates()) {
                 break;

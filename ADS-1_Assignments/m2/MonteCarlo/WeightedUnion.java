@@ -1,5 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
+/**
+ * Class for weighted union.
+ */
 
 class WeightedUnion {
   /**
