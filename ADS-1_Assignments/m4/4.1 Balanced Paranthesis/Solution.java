@@ -1,7 +1,21 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 class Solution {
-
-
+	/**
+	 * Constructs the object.
+	 */
+	Solution() {
+		//unused Constructor.
+	}
+	/**
+	 * Checks if Parenthesis is balanced.
+	 *
+	 * @param      s     String.
+	 *
+	 * @return     Trueif balanced, Otherwise False.
+	 */
 	public static boolean balancedParenthensies(String s) {
 		MyStack<Character> stack = new MyStack<>();
 		for (int i = 0; i < s.length(); i++) {
@@ -25,6 +39,11 @@ class Solution {
 		}
 		return stack.isEmpty();
 	}
+	/**
+	 * Main method.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int num = scan.nextInt();
