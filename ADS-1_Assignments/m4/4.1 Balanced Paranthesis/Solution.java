@@ -12,7 +12,7 @@ final class Solution {
     /**
      * Checks if Parenthesis is balanced.
      *
-     * @param      s     String.
+     * @param      str     String.
      *
      * @return     Trueif balanced, Otherwise False.
      */
