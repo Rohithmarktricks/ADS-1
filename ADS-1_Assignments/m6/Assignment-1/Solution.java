@@ -20,7 +20,7 @@ final class AddLargeNumbers {
         String[] strTemp = number.split("");
         String once = "";
         for (int i = 0; i < strTemp.length; i++) {
-            once += strTemp[strTemp.length-1-i];
+            once += strTemp[strTemp.length - 1 - i];
         }
         LinkedList<Integer> ll = new LinkedList<>();
         String[] str = once.split("");
