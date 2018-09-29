@@ -65,8 +65,33 @@ final class AddLargeNumbers {
 
         int max = 0;
         int min = 0;
+        int limit = 0;
+
+        if (list1.length < list2.length) {
+            max = list2.length;
+            min = list1.length;
+            limit = max - min;
+            int[] zeros = new int[limit];
+            for (int i = 0; i < limit; i++) {
+                zeros[i] = 0;
+            }
+        } else {
+            max = list1.length;
+            min = list2.length;
+            limit = max - min;
+            int[] zeros = new int[limit];
+            for (int i = 0; i < limit; i++) {
+                zeros[i] = 0;
+            }
+        }
+
         int k = 0;
         while (k < list1.length) {
+            int testList1 = list1.length;
+            if (testList1 != max) {
+                s1.push(0);
+                testList1++;
+            }
             Integer data = (Integer) list1.popAtHead();
             s1.push(data);
             k++;
@@ -74,6 +99,11 @@ final class AddLargeNumbers {
 
         int l = 0;
         while (l < list2.length) {
+            int testList2 = list1.length;
+            if (testList2 != max) {
+                s1.push(0);
+                testList2++;
+            }
             Integer data = (Integer) list2.popAtHead();
             s2.push(data);
             l++;
@@ -84,14 +114,8 @@ final class AddLargeNumbers {
         int m = 0;
         Integer sum1 = 0;
         Integer parRes = 0;
-        if (l < k) {
-            max = k;
-            min = l;
-        } else {
-            max = l;
-            min = k;
-        }
-        while (m < min) {
+
+        while (m < max) {
             Integer add1 = (Integer) s1.pop();
             Integer add2 = (Integer) s2.pop();
             sum1 = add1 + add2;
