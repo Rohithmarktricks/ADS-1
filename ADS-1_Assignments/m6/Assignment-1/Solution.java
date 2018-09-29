@@ -67,14 +67,14 @@ final class AddLargeNumbers {
         int min = 0;
         int k = 0;
         while (k < list1.length) {
-            Integer data = (Integer) list1.popAtTail();
+            Integer data = (Integer) list1.popAtHead();
             s1.push(data);
             k++;
         }
 
         int l = 0;
         while (l < list2.length) {
-            Integer data = (Integer) list2.popAtTail();
+            Integer data = (Integer) list2.popAtHead();
             s2.push(data);
             l++;
         }
@@ -89,13 +89,13 @@ final class AddLargeNumbers {
             max = l;
             min = k;
         }
-        while (m < max) {
+        while (m < min) {
             Integer add1 = (Integer) s1.pop();
             Integer add2 = (Integer) s2.pop();
             Integer sum1 = add1 + add2;
             Integer parRes = sum1 % den + remaining;
             remaining = sum1 / den;
-            result1.addAtTail(parRes);
+            result1.addAtHead(parRes);
             m++;
         }
         return result1;
