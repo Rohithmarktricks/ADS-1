@@ -1,6 +1,15 @@
 import java.util.Scanner;
+/**
+ * Class for add large numbers.
+ */
 class AddLargeNumbers {
-
+	/**
+	 * Numbers to Digits.
+	 *
+	 * @param      number  The number
+	 *
+	 * @return     Converts numbers to digits.
+	 */
 	public static LinkedList numberToDigits(String number) {
 		LinkedList<Integer> ll = new LinkedList<>();
 		String[] str = number.split("");
@@ -9,7 +18,13 @@ class AddLargeNumbers {
 		}
 		return ll;
 	}
-
+	/**
+	 * Converts digits to Numbers.
+	 *
+	 * @param      list  The list
+	 *
+	 * @return     digits.
+	 */
 	public static String digitsToNumber(LinkedList list) {
 		String finalStr = "";
 		int j = 0;
@@ -19,10 +34,17 @@ class AddLargeNumbers {
 		}
 		return finalStr;
 	}
-
+	/**
+	 * Adds large numbers.
+	 *
+	 * @param      list1  The list 1
+	 * @param      list2  The list 2
+	 *
+	 * @return    Linkedlist.
+	 */
 	public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
-		MyStack<Integer> s1 = new MyStack<>();
-		MyStack<Integer> s2 = new MyStack<>();
+		Stack<Integer> s1 = new Stack<>();
+		Stack<Integer> s2 = new Stack<>();
 
 		int k = 0;
 		while (k < list1.length) {
@@ -43,17 +65,23 @@ class AddLargeNumbers {
 			Integer add1 = (Integer)s1.pop();
 			Integer add2 = (Integer)s2.pop();
 			Integer sum1 = add1 + add2;
-			Integer parRes = sum1 ;
-			//% 10 + remaining
-			//remaining = sum1 / 10;
-			result1.addAtHead(parRes);
+			Integer parRes = sum1 % 10 + remaining;
+			remaining = sum1 / 10;
+			result1.addAtTail(parRes);
 			m++;
 		}
 		return result1;
 	}
 }
-
+/**
+ * Class for solution.
+ */
 public class Solution {
+	/**
+	 * Main method.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String input = sc.nextLine();
