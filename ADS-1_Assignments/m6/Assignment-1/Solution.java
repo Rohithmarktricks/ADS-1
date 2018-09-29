@@ -56,13 +56,13 @@ final class AddLargeNumbers {
 
         int k = 0;
         while (k < list1.length) {
-            Integer data = (Integer) list1.popAtHead();
+            Integer data = (Integer) list1.popAtTail();
             s1.push(data);
         }
 
         int l = 0;
         while (l < list2.length) {
-            Integer data = (Integer) list2.popAtHead();
+            Integer data = (Integer) list2.popAtTail();
             s2.push(data);
         }
 
@@ -101,6 +101,8 @@ public final class Solution {
         String input = sc.nextLine();
         String p = sc.nextLine();
         String q = sc.nextLine();
+        System.out.println(p);
+        System.out.println(q);
         switch (input) {
         case "numberToDigits":
             LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
