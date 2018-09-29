@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for add large numbers.
  */
-class AddLargeNumbers {
+final class AddLargeNumbers {
     /**
      * Constructs the object.
      */
@@ -48,19 +48,20 @@ class AddLargeNumbers {
      *
      * @return    Linkedlist.
      */
-    public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
+    public static LinkedList addLargeNumbers(final LinkedList list1,
+            final LinkedList list2) {
         Stack<Integer> s1 = new Stack<>();
         Stack<Integer> s2 = new Stack<>();
 
         int k = 0;
         while (k < list1.length) {
-            Integer data = (Integer)list1.popAtHead();
+            Integer data = (Integer) list1.popAtHead();
             s1.push(data);
         }
 
         int l = 0;
         while (l < list2.length) {
-            Integer data = (Integer)list2.popAtHead();
+            Integer data = (Integer) list2.popAtHead();
             s2.push(data);
         }
 
@@ -68,8 +69,8 @@ class AddLargeNumbers {
         Integer remaining = 0;
         int m = 0;
         while (m < k) {
-            Integer add1 = (Integer)s1.pop();
-            Integer add2 = (Integer)s2.pop();
+            Integer add1 = (Integer) s1.pop();
+            Integer add2 = (Integer) s2.pop();
             Integer sum1 = add1 + add2;
             Integer parRes = sum1 % 10 + remaining;
             remaining = sum1 / 10;
