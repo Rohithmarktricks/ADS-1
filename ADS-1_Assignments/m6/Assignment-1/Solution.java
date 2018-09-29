@@ -82,6 +82,8 @@ final class AddLargeNumbers {
         LinkedList<Integer> result1 = new LinkedList<>();
         Integer remaining = 0;
         int m = 0;
+        Integer sum1 = 0;
+        Integer parRes = 0;
         if (l < k) {
             max = k;
             min = l;
@@ -92,8 +94,8 @@ final class AddLargeNumbers {
         while (m < min) {
             Integer add1 = (Integer) s1.pop();
             Integer add2 = (Integer) s2.pop();
-            Integer sum1 = add1 + add2;
-            Integer parRes = sum1 % den + remaining;
+            sum1 = add1 + add2;
+            parRes = sum1 % den + remaining;
             remaining = sum1 / den;
             result1.addAtHead(parRes);
             m++;
