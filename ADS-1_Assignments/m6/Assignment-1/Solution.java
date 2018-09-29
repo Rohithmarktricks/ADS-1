@@ -17,13 +17,22 @@ final class AddLargeNumbers {
      * @return     Converts numbers to digits.
      */
     public static LinkedList numberToDigits(final String number) {
+        String[] strTemp = number.split("");
+        String once = "";
+        for (int i = 0; i < strTemp.length; i++) {
+            once += strTemp[strTemp.length-1-i];
+        }
         LinkedList<Integer> ll = new LinkedList<>();
-        String[] str = number.split("");
+        String[] str = once.split("");
         for (int i = 0; i < str.length; i++) {
             ll.addAtHead(Integer.parseInt(str[i]));
         }
         return ll;
     }
+
+
+
+
     /**
      * Converts digits to Numbers.
      *
@@ -54,22 +63,33 @@ final class AddLargeNumbers {
         Stack<Integer> s1 = new Stack<>();
         Stack<Integer> s2 = new Stack<>();
 
+        int max = 0;
+        int min = 0;
         int k = 0;
         while (k < list1.length) {
             Integer data = (Integer) list1.popAtTail();
             s1.push(data);
+            k++;
         }
 
         int l = 0;
         while (l < list2.length) {
             Integer data = (Integer) list2.popAtTail();
             s2.push(data);
+            l++;
         }
 
         LinkedList<Integer> result1 = new LinkedList<>();
         Integer remaining = 0;
         int m = 0;
-        while (m < k) {
+        if (l < k) {
+            max = k;
+            min = l;
+        } else {
+            max = l;
+            min = k;
+        }
+        while (m < max) {
             Integer add1 = (Integer) s1.pop();
             Integer add2 = (Integer) s2.pop();
             Integer sum1 = add1 + add2;
