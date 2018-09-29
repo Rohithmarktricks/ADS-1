@@ -50,6 +50,7 @@ final class AddLargeNumbers {
      */
     public static LinkedList addLargeNumbers(final LinkedList list1,
             final LinkedList list2) {
+        final int den = 10;
         Stack<Integer> s1 = new Stack<>();
         Stack<Integer> s2 = new Stack<>();
 
@@ -72,8 +73,8 @@ final class AddLargeNumbers {
             Integer add1 = (Integer) s1.pop();
             Integer add2 = (Integer) s2.pop();
             Integer sum1 = add1 + add2;
-            Integer parRes = sum1 % 10 + remaining;
-            remaining = sum1 / 10;
+            Integer parRes = sum1 % den + remaining;
+            remaining = sum1 / den;
             result1.addAtTail(parRes);
             m++;
         }
