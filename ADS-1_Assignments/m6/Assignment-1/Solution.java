@@ -26,13 +26,13 @@ class AddLargeNumbers {
 
 		int k = 0;
 		while (k < list1.length) {
-			Integer data = (Integer)list1.popAtTail();
+			Integer data = (Integer)list1.popAtHead();
 			s1.push(data);
 		}
 
 		int l = 0;
 		while (l < list2.length) {
-			Integer data = (Integer)list2.popAtTail();
+			Integer data = (Integer)list2.popAtHead();
 			s2.push(data);
 		}
 
