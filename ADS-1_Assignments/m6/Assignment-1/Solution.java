@@ -101,8 +101,6 @@ public final class Solution {
         String input = sc.nextLine();
         String p = sc.nextLine();
         String q = sc.nextLine();
-        System.out.println(p);
-        System.out.println(q);
         switch (input) {
         case "numberToDigits":
             LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
