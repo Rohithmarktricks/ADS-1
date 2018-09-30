@@ -1,4 +1,5 @@
-public class Deque<E> {
+import java.util.Iterator;
+public class Deque<E> implements Iterable<E> {
 	private class Node {
 		E data;
 		Node next;
@@ -73,7 +74,7 @@ public class Deque<E> {
 	public boolean isEmpty() {
 		return size == 0;
 	}
-	public String toString() {
+	/*public String toString() {
 		if (head != null) {
 			String str = "[";
 			Node realHead = head;
@@ -86,5 +87,32 @@ public class Deque<E> {
 		} else {
 			return "[]";
 		}
+	}*/
+
+	public Iterator iterator() {
+		return new MyIterator(head);
 	}
+
+	private class MyIterator implements Iterator {
+		Node current;
+
+		public MyIterator(Node first) {
+			current = first;
+		}
+
+		public boolean hasNext() {
+			return current !=  null;
+		}
+
+		public void remove() {
+
+		}
+
+		public E next() {
+			E data = current.data;
+			current = current.next;
+			return data;
+		}
+	}
+
 }

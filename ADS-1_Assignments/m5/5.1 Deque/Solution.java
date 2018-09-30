@@ -23,20 +23,24 @@ public final class Solution {
             switch (line[0]) {
             case "pushLeft":
                 deque.pushLeft(Integer.parseInt(line[1]));
-                System.out.println(deque);
+                //System.out.println(deque);
+                deque.forEach(e -> System.out.println(e));
                 break;
             case "pushRight":
                 deque.pushRight(Integer.parseInt(line[1]));
-                System.out.println(deque);
+                //System.out.println(deque);
+                deque.forEach(e -> System.out.println(e));
                 break;
             case "popLeft":
                 if (deque.popLeft() != null) {
-                    System.out.println(deque);
+                    //System.out.println(deque);
+                    deque.forEach(e -> System.out.println(e));
                 }
                 break;
             case "popRight":
                 if (deque.popRight() != null) {
-                    System.out.println(deque);
+                    //System.out.println(deque);
+                    deque.forEach(e -> System.out.println(e));
                 }
                 break;
             case "size":
