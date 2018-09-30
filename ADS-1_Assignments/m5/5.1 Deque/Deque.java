@@ -8,9 +8,9 @@ public class Deque<E> {
 		Node(E data) {
 			this.data = data;
 		}
-		Node(E data, Node n) {
+		Node(E data, Node nextNode) {
 			this.data = data;
-			this.next = n;
+			this.next = nextNode;
 		}
 	}
 	Deque() {
@@ -75,13 +75,14 @@ public class Deque<E> {
 	}
 	public String toString() {
 		if (head != null) {
-			String s = "[";
-			Node thead = head;
-			while (thead.next != null) {
-				s += (thead.data) + ", ";
-				thead = thead.next;
-			} s += (thead.data) + "]";
-			return s;
+			String str = "[";
+			Node realHead = head;
+			while (realHead.next != null) {
+				str += (realHead.data) + ", ";
+				realHead = realHead.next;
+			};
+			str += (realHead.data) + "]";
+			return str;
 		} else {
 			return "[]";
 		}
