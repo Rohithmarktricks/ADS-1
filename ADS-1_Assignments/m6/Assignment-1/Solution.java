@@ -1,6 +1,7 @@
 import java.util.Scanner;
 /**
  * Class for add large numbers.
+ * @author : Rohithmarktricks.
  */
 final class AddLargeNumbers {
     /**
@@ -9,6 +10,7 @@ final class AddLargeNumbers {
     private AddLargeNumbers() {
         //unused.
     }
+    // -----------------------------
     /**
      * Numbers to Digits.
      *
@@ -29,10 +31,7 @@ final class AddLargeNumbers {
         }
         return ll;
     }
-
-
-
-
+    // ------------------------------
     /**
      * Converts digits to Numbers.
      *
@@ -49,6 +48,7 @@ final class AddLargeNumbers {
         }
         return finalStr;
     }
+    // ---------------------------------
     /**
      * Adds large numbers.
      *
@@ -104,12 +104,18 @@ final class AddLargeNumbers {
             second--;
         }
 
+        /**
+         * result stores the addition value.
+         */
         LinkedList<Integer> result1 = new LinkedList<>();
         Integer carry = 0;
         int m = 0;
         Integer sumTotal = 0;
         Integer sumPartial = 0;
 
+        /**
+         * final addition and updating the linkedlist.
+         */
         while (m < max) {
             Integer add1 = (Integer) s1.pop();
             Integer add2 = (Integer) s2.pop();
@@ -129,6 +135,8 @@ final class AddLargeNumbers {
         return result1;
     }
 }
+// -----------------------------
+// -----------------------------
 /**
  * Class for solution.
  */
