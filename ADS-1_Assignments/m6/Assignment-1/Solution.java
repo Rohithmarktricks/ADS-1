@@ -118,9 +118,9 @@ final class AddLargeNumbers {
             carry = sumTotal / den;
             result1.addAtHead(sumPartial);
             m++;
-        }
-        //result1.addAtHead(carry);
-        return result1;
+        } if (carry != 0) {
+            result1.addAtHead(carry);
+        } return result1;
     }
 }
 /**
