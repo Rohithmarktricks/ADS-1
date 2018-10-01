@@ -110,7 +110,7 @@ final class AddLargeNumbers {
         Integer sumTotal = 0;
         Integer sumPartial = 0;
 
-        while (m <= max) {
+        while (m < max) {
             Integer add1 = (Integer) s1.pop();
             Integer add2 = (Integer) s2.pop();
             sumTotal = add1 + add2;
