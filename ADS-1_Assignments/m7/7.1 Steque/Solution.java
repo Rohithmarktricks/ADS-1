@@ -15,10 +15,10 @@ public final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Steque steque = new Steque();
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
-        while(scan.hasNext()) {
+        Steque steque = new Steque();
+        while (scan.hasNext()) {
             String[] line = scan.nextLine().split(" ");
             switch (line[0]) {
             case "push":
@@ -39,6 +39,7 @@ public final class Solution {
                 break;
             default:
                 System.out.println();
+                steque = new Steque();
                 break;
             }
         }
