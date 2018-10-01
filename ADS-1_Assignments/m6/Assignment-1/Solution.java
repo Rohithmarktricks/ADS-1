@@ -68,6 +68,7 @@ final class AddLargeNumbers {
         int limit = 0;
         int first = list1.length;
         int second = list2.length;
+
         /**
          * finds maximum.
          */
@@ -79,6 +80,7 @@ final class AddLargeNumbers {
             limit = second - first;
         }
 
+        //padding first with 0's.
         int k = 0;
         while (k < max - first) {
             s1.push(0);
@@ -90,6 +92,7 @@ final class AddLargeNumbers {
             first--;
         }
 
+        //padding second with 0's.
         int l = 0;
         while (l < max - second) {
             s1.push(0);
@@ -101,23 +104,22 @@ final class AddLargeNumbers {
             second--;
         }
 
-
         LinkedList<Integer> result1 = new LinkedList<>();
-        Integer remaining = 0;
+        Integer carry = 0;
         int m = 0;
-        Integer sum1 = 0;
-        Integer parRes = 0;
+        Integer sumTotal = 0;
+        Integer sumPartial = 0;
 
-        while (m < max) {
+        while (m <= max) {
             Integer add1 = (Integer) s1.pop();
             Integer add2 = (Integer) s2.pop();
-            sum1 = add1 + add2;
-            parRes = sum1 % den + remaining;
-            remaining = sum1 / den;
-            result1.addAtHead(parRes);
+            sumTotal = add1 + add2;
+            sumPartial = (sumTotal % den) + carry;
+            carry = sumTotal / den;
+            result1.addAtHead(sumPartial);
             m++;
         }
-        result1.addAtHead(remaining);
+        result1.addAtHead(carry);
         return result1;
     }
 }
