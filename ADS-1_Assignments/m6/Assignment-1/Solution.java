@@ -114,21 +114,13 @@ final class AddLargeNumbers {
             Integer add1 = (Integer) s1.pop();
             Integer add2 = (Integer) s2.pop();
             sumTotal = add1 + add2;
-            //System.out.println("sumTotal :" + sumTotal);
-            //System.out.println("----------");
             sumPartial = (sumTotal % den) + carry;
-            //System.out.println("sumPartial :" + sumPartial);
-            //System.out.println("----------");
-            if (sumPartial >= 10) {
+            if (sumPartial >= den) {
                 carry = sumPartial / den;
-                sumPartial = sumPartial % 10;
-                //System.out.println(sumPartial);
-                //System.out.println(carry);
+                sumPartial = sumPartial % den;
             } else {
                 carry = sumTotal / den;
             }
-            // System.out.println("Carry :" + carry);
-            // System.out.println("___________________");
             result1.addAtHead(sumPartial);
             m++;
         } if (carry != 0) {
