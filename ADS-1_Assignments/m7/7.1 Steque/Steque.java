@@ -98,7 +98,7 @@ public class Steque<E> {
 			str += (realHead.data);
 			return str;
 		} else {
-			return "steque is empty.";
+			return "Steque is empty.";
 		}
 	}
 
