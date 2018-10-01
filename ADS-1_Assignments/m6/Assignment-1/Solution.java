@@ -66,48 +66,41 @@ final class AddLargeNumbers {
         int max = 0;
         int min = 0;
         int limit = 0;
-
-        if (list1.length < list2.length) {
-            max = list2.length;
-            min = list1.length;
-            limit = max - min;
-            int[] zeros = new int[limit];
-            for (int i = 0; i < limit; i++) {
-                zeros[i] = 0;
-            }
+        int first = list1.length;
+        int second = list2.length;
+        /**
+         * finds maximum.
+         */
+        if (first - second > 0) {
+            max = first;
+            limit = first - second;
         } else {
-            max = list1.length;
-            min = list2.length;
-            limit = max - min;
-            int[] zeros = new int[limit];
-            for (int i = 0; i < limit; i++) {
-                zeros[i] = 0;
-            }
+            max = second;
+            limit = second - first;
         }
 
         int k = 0;
-        while (k < list1.length) {
-            int testList1 = list1.length;
-            if (testList1 != max) {
-                s1.push(0);
-                testList1++;
-            }
+        while (k < max - first) {
+            s1.push(0);
+            k++;
+        }
+        while (first != 0) {
             Integer data = (Integer) list1.popAtHead();
             s1.push(data);
-            k++;
+            first--;
         }
 
         int l = 0;
-        while (l < list2.length) {
-            int testList2 = list1.length;
-            if (testList2 != max) {
-                s1.push(0);
-                testList2++;
-            }
-            Integer data = (Integer) list2.popAtHead();
-            s2.push(data);
+        while (l < max - second) {
+            s1.push(0);
             l++;
         }
+        while (second != 0) {
+            Integer data = (Integer) list2.popAtHead();
+            s2.push(data);
+            second--;
+        }
+
 
         LinkedList<Integer> result1 = new LinkedList<>();
         Integer remaining = 0;
