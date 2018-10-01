@@ -38,6 +38,7 @@ public final class Solution {
                 }
                 break;
             default:
+                System.out.println();
                 break;
             }
         }
