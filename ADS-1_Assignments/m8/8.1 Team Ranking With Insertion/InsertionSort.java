@@ -1,10 +1,10 @@
 import java.util.*;
 class InsertionSort {
 
-	static void sort(Team[] a) {
-		int n = a.length;
+	static void sort(List<Team> a) {
+		int n = a.size();
 		for (int i = 0; i < n; i++) {
-			for (int j = i; j > 0 && greater(a[j], a[j - 1]); j--) {
+			for (int j = i; j > 0 && greater(a.get(j), a.get(j - 1)); j--) {
 				swap(a, j, j - 1);
 			}
 		}
@@ -14,9 +14,7 @@ class InsertionSort {
 		return a.compareTo(b) > 0;
 	}
 
-	private static void swap(Team[] a, int i, int j) {
-		Team swap = a[i];
-		a[i] = a[j];
-		a[j] = swap;
+	private static void swap(List<Team> a, int i, int j) {
+		a.replace(i,j);
 	}
 }
