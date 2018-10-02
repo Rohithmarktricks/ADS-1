@@ -3,11 +3,11 @@ import java.util.Arrays;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
-    private Solution(){
+    private Solution() {
         //unused.
     }
     /**
@@ -15,7 +15,7 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         Team[] dupTeams = new Team[15];
         InsertionSort is = new InsertionSort();
@@ -23,8 +23,8 @@ public class Solution {
         while (scan.hasNext()) {
             String[] str = scan.nextLine().split(",");
             dupTeams[i++] = new Team(str[0], Integer.parseInt(str[1]),
-                                Integer.parseInt(str[2]),
-                                Integer.parseInt(str[3]));
+                                     Integer.parseInt(str[2]),
+                                     Integer.parseInt(str[3]));
         }
         scan.close();
         Team[] teams = new Team[i];
