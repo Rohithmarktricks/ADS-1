@@ -1,4 +1,3 @@
-import java.util.*;
 class InsertionSort {
 
 	static void sort(List<Team> a) {
