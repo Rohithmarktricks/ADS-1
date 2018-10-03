@@ -16,7 +16,7 @@ public class Solution {
 		while (scan.hasNext()) {
 			// sb.append(scan.nextLine()+":")
 			String b = scan.nextLine();
-			System.out.println(b);
+			// System.out.println(b);
 
 			String[] a = b.split(",");
 			// System.out.println(Arrays.toString(a));
