@@ -10,7 +10,8 @@ public class MergedSortImproved {
 		//unused Constructor.
 	}
 
-	public static final int limit = 17;
+	// public static final int limit = 17;
+	public static final int limit = 7;
 	/**
 	 * merge method.
 	 *
