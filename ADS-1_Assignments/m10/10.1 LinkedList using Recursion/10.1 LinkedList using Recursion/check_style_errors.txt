@@ -1,6 +1,4 @@
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:59:8: Unused @param tag for 'head'. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:65:34: Expected @param tag for 'head1'. [JavadocMethod]
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:86:35: 'head' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.

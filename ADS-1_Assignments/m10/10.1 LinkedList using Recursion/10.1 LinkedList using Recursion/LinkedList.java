@@ -56,7 +56,7 @@ public class LinkedList {
     /**
      * Insert helper function.
      *
-     * @param      head     The head
+     * @param      head1     The head
      * @param      pos      The position
      * @param      element  The element
      *
