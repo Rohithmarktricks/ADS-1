@@ -26,12 +26,15 @@ public class LinkedList {
          * @param      data  The data
          * @param      next  The next
          */
-        Node(int data, Node next) {
-            this.data = data;
-            this.next = next;
+        Node(final int data1, final Node next1) {
+            this.data = data1;
+            this.next = next1;
         }
     }
-    Node head;
+    /**
+     * Node head.
+     */
+    private Node head;
     /**
      * Insert the value at a position.
      *
