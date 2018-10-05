@@ -43,10 +43,10 @@ public class LinkedList {
      *
      * @return     { boolean }
      */
-    public boolean insertAt(int position, int data) {
+    public boolean insertAt(final int position, final int data) {
         boolean flag = false;
         try {
-            head = insertHelper(head, position , data);
+            head = insertHelper(head, position, data);
         } catch (Exception e) {
             System.out.println("Can't insert at this position.");
             flag = true;
@@ -62,8 +62,10 @@ public class LinkedList {
      *
      * @return     { Node }
      */
-    Node insertHelper(Node head, int pos, int element) {
-        if (pos == 0) return new Node(element, head);
+    Node insertHelper(final Node head, final int pos, final int element) {
+        if (pos == 0) {
+            return new Node(element, head);
+        }
         head.next = insertHelper(head.next, pos - 1, element);
         return head;
     }
@@ -81,7 +83,7 @@ public class LinkedList {
      *
      * @return     { Node. }
      */
-    Node reverseHelper(Node head) {
+    Node reverseHelper(final Node head) {
         if (head == null || head.next == null) {
             return head;
         }
@@ -103,6 +105,6 @@ public class LinkedList {
             thead = thead.next;
         }
 
-        return s.substring(0 , s.length() - 2);
+        return s.substring(0, s.length() - 2);
     }
 }

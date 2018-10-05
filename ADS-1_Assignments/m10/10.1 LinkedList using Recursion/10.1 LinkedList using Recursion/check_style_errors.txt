@@ -1,14 +1,5 @@
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:46:29: Parameter position should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:46:43: Parameter data should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:49:47: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:65:23: Parameter head should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:65:28: 'head' hides a field. [HiddenField]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:65:34: Parameter pos should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:65:43: Parameter element should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:66: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:84:24: Parameter head should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:84:29: 'head' hides a field. [HiddenField]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:106:29: ',' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:65:34: 'head' hides a field. [HiddenField]
+[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:86:35: 'head' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 2 errors.
