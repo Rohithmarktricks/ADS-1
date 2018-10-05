@@ -79,7 +79,7 @@ public class LinkedList {
     /**
      * Reverse LinkedList Helper.
      *
-     * @param      head  The head
+     * @param      head1  The head
      *
      * @return     { Node. }
      */
