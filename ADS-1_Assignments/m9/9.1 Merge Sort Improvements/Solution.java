@@ -18,16 +18,15 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        // StringBuffer sb = new StringBuffer();
         while (scan.hasNext()) {
-            // sb.append(scan.nextLine()+":")
             String b = scan.nextLine();
-            // System.out.println(b);
-
             String[] a = b.split(",");
-            // System.out.println(Arrays.toString(a));
+            final long startTime = System.nanoTime();
             MergedSortImproved.sort(a);
+            final long endTime = System.nanoTime();
             System.out.println(Arrays.toString(a));
+            // System.out.println("---------------------------");
+            // System.out.println("limit : "+MergedSortImproved.limit+" | "+"Time : "+(endTime - startTime)/1000000000.0+" secs.");
             System.out.println();
 
         }
