@@ -12,8 +12,20 @@ public class LinkedList {
      * Class for node.
      */
     private class Node {
+        /**
+         * data.
+         */
         private int data;
+        /**
+         * Node next.
+         */
         private Node next;
+        /**
+         * Constructs the object.
+         *
+         * @param      data  The data
+         * @param      next  The next
+         */
         Node(int data, Node next) {
             this.data = data;
             this.next = next;
