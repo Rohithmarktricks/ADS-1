@@ -1,8 +1,4 @@
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:26:12: Unused @param tag for 'data'. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:27:12: Unused @param tag for 'next'. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:29:24: Expected @param tag for 'data1'. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:29:42: Expected @param tag for 'next1'. [JavadocMethod]
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:46:29: Parameter position should be final. [FinalParameters]
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:46:43: Parameter data should be final. [FinalParameters]
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:49:47: ',' is preceded with whitespace. [NoWhitespaceBefore]
@@ -15,4 +11,4 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:84:29: 'head' hides a field. [HiddenField]
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:106:29: ',' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 11 errors.

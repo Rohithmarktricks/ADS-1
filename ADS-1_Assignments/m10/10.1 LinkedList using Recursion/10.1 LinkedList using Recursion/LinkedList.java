@@ -23,8 +23,8 @@ public class LinkedList {
         /**
          * Constructs the object.
          *
-         * @param      data  The data
-         * @param      next  The next
+         * @param      data1  The data
+         * @param      next1  The next
          */
         Node(final int data1, final Node next1) {
             this.data = data1;
