@@ -5,7 +5,7 @@ public class LinkedList {
     /**
      * Constructs the object.
      */
-    LinkedList(){
+    LinkedList() {
         //unused Constructor.
     }
     /**
