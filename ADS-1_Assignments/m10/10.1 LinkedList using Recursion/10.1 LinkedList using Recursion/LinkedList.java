@@ -62,12 +62,12 @@ public class LinkedList {
      *
      * @return     { Node }
      */
-    Node insertHelper(final Node head, final int pos, final int element) {
+    Node insertHelper(final Node head1, final int pos, final int element) {
         if (pos == 0) {
-            return new Node(element, head);
+            return new Node(element, head1);
         }
-        head.next = insertHelper(head.next, pos - 1, element);
-        return head;
+        head1.next = insertHelper(head1.next, pos - 1, element);
+        return head1;
     }
 
     /**
