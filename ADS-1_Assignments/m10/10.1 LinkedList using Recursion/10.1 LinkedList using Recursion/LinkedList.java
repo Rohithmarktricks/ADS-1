@@ -83,14 +83,14 @@ public class LinkedList {
      *
      * @return     { Node. }
      */
-    Node reverseHelper(final Node head) {
-        if (head == null || head.next == null) {
-            return head;
+    Node reverseHelper(final Node head1) {
+        if (head1 == null || head1.next == null) {
+            return head1;
         }
-        Node nhead = reverseHelper(head.next);
-        head.next.next = head;
-        head.next = null;
-        return nhead;
+        Node nhead1 = reverseHelper(head1.next);
+        head1.next.next = head1;
+        head1.next = null;
+        return nhead1;
     }
     /**
      * Prints the final LinkedList elements.
