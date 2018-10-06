@@ -1,16 +1,20 @@
 public class Student implements Comparable {
 
 	String name;
-	String dob;
+	int dod;
+	int dom;
+	int doy;
 	int s1Marks;
 	int s2Marks;
 	int s3Marks;
 	int totalMarks;
 	String category;
 
-	public Student(String sName, String dOB, int s1, int s2, int s3, int total, String cat) {
+	public Student(String sName, int doB, int doM, int doY, int s1, int s2, int s3, int total, String cat) {
 		name = sName;
-		dob = dOB;
+		dod = doB;
+		dom = doM;
+		doy = doY;
 		s1Marks = s1;
 		s2Marks = s2;
 		s3Marks = s3;
@@ -27,12 +31,12 @@ public class Student implements Comparable {
 		if (this.s3Marks < that.s3Marks) return -1;
 		if (this.s2Marks > that.s2Marks) return 1;
 		if (this.s2Marks < that.s2Marks) return -1;
-		/*if (Integer.parseInt(this.dob[2]) > Integer.parseInt(this.dob[2])) return 1;
-		if (Integer.parseInt(this.dob[2]) < Integer.parseInt(this.dob[2])) return -1;
-		if (Integer.parseInt(this.dob[1]) > Integer.parseInt(this.dob[1])) return 1;
-		if (Integer.parseInt(this.dob[1]) < Integer.parseInt(this.dob[1])) return -1;
-		if (Integer.parseInt(this.dob[0]) > Integer.parseInt(this.dob[0])) return 1;
-		if (Integer.parseInt(this.dob[0]) > Integer.parseInt(this.dob[0])) return -1;*/
+		if (this.doy < that.doy) return 1;
+		if (this.doy > that.doy) return -1;
+		if ((this.doy == that.doy) && (this.dom < that.dom)) return 1;
+		if ((this.doy == that.doy) && (this.dom > that.dom)) return -1;
+		if ((this.doy == that.doy) && (this.dod < that.dod)) return 1;
+		if ((this.doy == that.doy) && (this.dod > that.dod)) return -1;
 		else return 0;
 	}
 

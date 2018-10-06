@@ -31,9 +31,29 @@ tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:27)
+Shreya,23,SC
+Aryan,32,ST
+Anjali,38,SC
+Manoj,39,SC
+Aishwarya,48,Open
+vani,50,Open
+Ankit,58,BC
+Abhishek,60,BC
+yash,61,BC
+varsha,66,BC
+Priyanka,70,Open
+shyam,71,ST
+priya,72,SC
+rahul,73,Open
+Arjun,75,Open
+Ajay,76,Open
+Aditya,80,ST
+riya,83,Open
+Raj,87,BC
+tanvi,90,BC
+Ira,93,ST
+Deepak,98,Open
+divya,99,ST
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -77,9 +97,36 @@ Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:27)
+Shreya,23,SC
+Aryan,32,ST
+Anjali,38,SC
+Manoj,39,SC
+Aishwarya,48,Open
+Sneha,50,SC
+vani,50,Open
+Gayatri,58,SC
+Ankit,58,BC
+Abhishek,60,BC
+yash,61,BC
+varsha,66,BC
+Tanya,66,BC
+Priyanka,70,Open
+Amit,70,Open
+ROHIT,70,SC
+shyam,71,ST
+priya,72,SC
+rahul,73,Open
+Arjun,75,Open
+Ajay,76,Open
+Aditya,80,ST
+riya,83,Open
+mahesh,87,Open
+Raj,87,BC
+tanvi,90,BC
+Ira,93,ST
+Deepak,98,Open
+Ishita,99,Open
+divya,99,ST
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -98,9 +145,16 @@ divya,99,Open
 Aditya,80,ST
 priya,76,SC
 Your Output: 
-------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:27)
+Abhishek,60,BC
+Tanya,66,BC
+Priyanka,70,Open
+Amit,70,Open
+rahul,73,Open
+priya,76,SC
+Ajay,76,Open
+Aditya,80,ST
+tanvi,90,Open
+divya,99,Open
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -122,9 +176,16 @@ priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
 Your Output: 
-------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:27)
+Abhishek,60,BC
+Tanya,66,BC
+Priyanka,70,Open
+Amit,70,Open
+rahul,73,Open
+priya,76,SC
+Ajay,76,Open
+Aditya,80,Open
+tanvi,90,ST
+divya,99,Open
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -173,9 +234,36 @@ Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
 Your Output: 
-------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:27)
+shyam,23,Open
+Shreya,23,Open
+Aryan,32,Open
+Anjali,38,Open
+Manoj,39,Open
+Aishwarya,48,Open
+Sneha,50,Open
+vani,50,Open
+Gayatri,58,Open
+Ankit,58,Open
+Abhishek,60,Open
+yash,61,Open
+varsha,66,Open
+Priyanka,70,Open
+ROHIT,70,Open
+Tanya,72,Open
+rahul,73,Open
+Arjun,75,Open
+Amit,76,Open
+Ajay,76,Open
+priya,76,Open
+Aditya,80,Open
+riya,83,Open
+mahesh,87,Open
+Raj,87,Open
+Ira,93,Open
+Deepak,98,Open
+tanvi,99,Open
+Ishita,99,Open
+divya,99,Open
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -226,7 +314,34 @@ rahul,73,Open
 priya,72,SC
 varsha,66,BC
 Your Output: 
-------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:27)
+Shreya,23,SC
+Aryan,32,ST
+Manoj,32,SC
+Anjali,38,SC
+Aishwarya,48,Open
+Sneha,50,SC
+vani,50,Open
+Gayatri,58,SC
+Ankit,58,SC
+Abhishek,60,SC
+yash,61,Open
+varsha,66,BC
+Tanya,66,SC
+Priyanka,70,Open
+ROHIT,70,SC
+shyam,71,ST
+priya,72,SC
+rahul,73,Open
+Arjun,75,Open
+Ajay,76,Open
+Amit,76,Open
+Aditya,80,ST
+riya,83,Open
+mahesh,87,BC
+Raj,87,BC
+tanvi,90,BC
+Ira,93,ST
+Deepak,99,Open
+Ishita,99,Open
+divya,99,ST
 ----------------------------------------
