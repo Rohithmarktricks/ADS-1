@@ -16,7 +16,7 @@ class InsertionSort {
 	}
 
 	static boolean less(Comparable[] a, int i, int j) {
-		return a[i].compareTo(a[j]) < 1;
+		return a[i].compareTo(a[j]) > 1;
 	}
 
 	// public static void main(String[] args) {
