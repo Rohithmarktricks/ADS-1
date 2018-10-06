@@ -1,0 +1,6 @@
+[master 6fadbd1] "ads1_m12_a1: 0/6 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
+ 4 files changed, 25 insertions(+), 2 deletions(-)
+ rewrite ADS-1_Assignments/m12/Assignment-1/result/score.json (100%)
+To https://github.com/Rohithmarktricks/ADS-1.git
+   dce0de3..6fadbd1  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.

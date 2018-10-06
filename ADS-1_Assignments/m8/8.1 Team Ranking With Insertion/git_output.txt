@@ -1,0 +1,151 @@
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+	modified:   ../../../ADS-1-practice/Basic Sorting Algorithms/Time Complexities/TimeComplexity.class
+	modified:   ../../../ADS-1-practice/Basic Sorting Algorithms/Time Complexities/TimeComplexity.java
+	deleted:    ../../CodeCamp_Percolation/Percolation.class
+	deleted:    ../../CodeCamp_Percolation/Solution.class
+	deleted:    ../../CodeCamp_Percolation/Solution.java
+	deleted:    ../../CodeCamp_Percolation/WeightedUnion.class
+	deleted:    ../../CodeCamp_Percolation/WeightedUnion.java
+	deleted:    ../../CodeCamp_Percolation/md5/input000.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input001.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input002.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input003.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input004.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input005.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input006.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input007.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input008.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input009.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input010.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input011.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input012.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input013.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input014.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input015.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input016.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input017.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input018.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input019.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input020.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input021.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input022.txt
+	deleted:    ../../CodeCamp_Percolation/md5/input023.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output000.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output001.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output002.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output003.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output004.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output005.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output006.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output007.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output008.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output009.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output010.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output011.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output012.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output013.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output014.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output015.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output016.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output017.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output018.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output019.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output020.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output021.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output022.txt
+	deleted:    ../../CodeCamp_Percolation/md5/output023.txt
+	deleted:    ../../CodeCamp_Percolation/md5/problem_id.txt
+	deleted:    ../../CodeCamp_Percolation/md5/score.txt
+	deleted:    ../../CodeCamp_Percolation/readme.txt
+	deleted:    ../../CodeCamp_Percolation/result/score.json
+	deleted:    ../../CodeCamp_Percolation/testcases/input000.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input001.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input002.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input003.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input004.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input005.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input006.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input007.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input008.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input009.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input010.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input011.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input012.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input013.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input014.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input015.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input016.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input017.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input018.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input019.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input020.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input021.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input022.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/input023.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output000.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output001.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output002.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output003.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output004.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output005.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output006.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output007.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output008.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output009.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output010.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output011.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output012.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output013.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output014.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output015.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output016.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output017.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output018.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output019.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output020.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output021.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output022.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/output023.txt
+	deleted:    ../../CodeCamp_Percolation/testcases/problem_id.txt
+	modified:   ../../m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java
+	modified:   ../../m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/git_output.txt
+	modified:   ../../m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/result/score.json
+	modified:   ../../m12/Assignment-1/Solution.java
+	modified:   ../../m12/Assignment-1/git_output.txt
+	modified:   ../../m9/9.1 Merge Sort Improvements/git_output.txt
+
+Untracked files:
+	../../../ADS-1-practice/Basic Sorting Algorithms/Quick/
+	../../../ADS-1-practice/Basic Sorting Algorithms/Time Complexities/InsertionSort.class
+	../../../ADS-1-practice/Basic Sorting Algorithms/Time Complexities/InsertionSort.java
+	../../../ADS-1-practice/Basic Sorting Algorithms/Time Complexities/MergeSort.class
+	../../../ADS-1-practice/Basic Sorting Algorithms/Time Complexities/MergeSort.java
+	../../../ADS-1-practice/Basic Sorting Algorithms/Time Complexities/RandomArray.class
+	../../../ADS-1-practice/Basic Sorting Algorithms/Time Complexities/RandomArray.java
+	../../../ADS-1-practice/Basic Sorting Algorithms/Time Complexities/SelectionSort.java
+	../../../ADS-1-practice/Memoization/Sample.class
+	../../../ADS-1-practice/Memoization/Sample.java
+	../../assignments.zip
+	../../m10/10.1 LinkedList using Recursion.zip
+	../../m12/Assignment-1.zip
+	../../m12/Assignment-1/md5/score.txt
+	../../m12/Assignment-1/result/
+	../../m2/01UnionFind.pdf
+	../../m3/3-sum.zip
+	../../m3/Sorted_Array.zip
+	../../m4/4.1 Balanced Paranthesis.zip
+	../../m5/5.1 Deque.zip
+	../../m5/5.2 Josephus Problem.zip
+	../../m5/5.2 Josephus Problem/
+	../../m6/Assignment-1.zip
+	../../m7/7.1 Steque.zip
+	../8.1 Team Ranking With Insertion.zip
+	../8.2 Team Ranking With Selection.zip
+	../../m9/9.1 Merge Sort Improvements.zip
+
+no changes added to commit
+fatal: unable to access 'https://github.com/Rohithmarktricks/ADS-1.git/': Failed to connect to 10.10.10.3 port 3128: No route to host
