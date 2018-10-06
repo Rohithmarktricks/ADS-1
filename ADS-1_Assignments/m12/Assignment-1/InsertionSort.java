@@ -1,4 +1,7 @@
 import java.util.*;
+/**
+ * Class for insertion sort.
+ */
 class InsertionSort {
 	static void sort(Comparable[] a) {
 		int n = a.length;
@@ -8,13 +11,28 @@ class InsertionSort {
 			}
 		}
 	}
-
+	/**
+	 * { swap }
+	 *
+	 * @param      a     { parameter_description }
+	 * @param      i     { parameter_description }
+	 * @param      j     { parameter_description }
+	 */
 	static void swap(Comparable[] a, int i, int j) {
 		Comparable temp = a[j];
 		a[j] = a[i];
 		a[i] = temp;
 	}
 
+	/**
+	 * { lesser. }
+	 *
+	 * @param      a     { parameter_description }
+	 * @param      i     { parameter_description }
+	 * @param      j     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	static boolean less(Comparable[] a, int i, int j) {
 		return a[i].compareTo(a[j]) > 1;
 	}
