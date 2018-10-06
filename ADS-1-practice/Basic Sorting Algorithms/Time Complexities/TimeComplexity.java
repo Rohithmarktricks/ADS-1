@@ -28,7 +28,7 @@ public class TimeComplexity {
 				System.out.println("merg: " + (float)merg(i) + "  " + "insert: " + insert(i) + "  " + "select: " + select(i));
 				System.out.println("--------------------------------------------------------------------------------");
 			} else {
-				System.out.println("merg is fast when N : " + i);
+				System.out.println("merg is fast when N >= " + i);
 				System.out.println("merg: " + (float)merg(i) + "  " + "insert: " + insert(i) + "  " + "select: " + select(i));
 				System.out.println("--------------------------------------------------------------------------------");
 				break;
