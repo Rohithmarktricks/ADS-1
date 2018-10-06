@@ -59,6 +59,8 @@ Ajay,76,Open
 priya,72,SC
 rahul,73,Open
 Abhishek,60,BC
+Priyanka,70,Open
+Aditya,80,ST
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -138,6 +140,9 @@ priya,72,SC
 rahul,73,Open
 Tanya,66,BC
 Abhishek,60,BC
+Priyanka,70,Open
+Aditya,80,ST
+divya,99,ST
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -168,6 +173,8 @@ Amit,70,Open
 tanvi,90,Open
 
 Ajay,76,Open
+priya,76,SC
+rahul,73,Open
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -203,6 +210,9 @@ tanvi,90,ST
 Ajay,76,Open
 priya,76,SC
 rahul,73,Open
+Tanya,66,BC
+Abhishek,60,BC
+Priyanka,70,Open
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -289,6 +299,12 @@ Tanya,72,Open
 Abhishek,60,Open
 Priyanka,70,Open
 Aditya,80,Open
+divya,99,Open
+Amit,76,Open
+tanvi,99,Open
+mahesh,87,Open
+Ishita,99,Open
+ROHIT,70,Open
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -378,4 +394,11 @@ Abhishek,60,SC
 Priyanka,70,Open
 Aditya,80,ST
 divya,99,ST
+Amit,76,Open
+tanvi,90,BC
+mahesh,87,BC
+Ishita,99,Open
+ROHIT,70,SC
+vani,50,Open
+yash,61,Open
 ----------------------------------------

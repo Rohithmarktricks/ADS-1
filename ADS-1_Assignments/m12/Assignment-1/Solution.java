@@ -41,7 +41,7 @@ public class Solution {
             System.out.println(student[i].name + "," + student[i].totalMarks + "," + student[i].category);
         }
         System.out.println();
-        for (int j = 0; j < unreserved; j++) {
+        for (int j = 0; j < vacancies; j++) {
             System.out.println(student[j].name + "," + student[j].totalMarks + "," + student[j].category);
         }
 
