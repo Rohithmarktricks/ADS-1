@@ -25,10 +25,10 @@ public class Solution {
 		scan.close();
 		is.sort(student);
 
-		for(int i=0; i< qualified; i++){
+		for (int i = 0; i < qualified; i++) {
+
 			System.out.println(student[i].name + "," + student[i].totalMarks + "," + student[i].category);
 		}
-		// System.out.println(student.toString().replace("[", "").
-		                   // replace("]", "").replace(", ", ","));
+
 	}
 }
