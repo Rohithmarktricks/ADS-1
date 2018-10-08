@@ -1,2 +1,5 @@
 Starting audit...
+[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:82:8: Unused @param tag for 'head10'. [JavadocMethod]
+[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/LinkedList.java:86:35: Expected @param tag for 'head1'. [JavadocMethod]
 Audit done.
+Checkstyle ends with 2 errors.
