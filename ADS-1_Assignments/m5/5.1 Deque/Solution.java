@@ -1,55 +1,57 @@
 import java.util.Scanner;
 /**
- * Class for solution.
+ * class solution.
  */
 public final class Solution {
     /**
-     * Constructs the object.
-     */
+    * Constructs the object.
+    */
     private Solution() {
-
+        // leave this blank
     }
     /**
-     * Reads the inputs and displays the outputs.
+     * main function to execute test cases.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
-        Deque deque = new Deque();
-        for (int i = 0; i < n; i++) {
-            String[] line = scan.nextLine().split(" ");
-            switch (line[0]) {
+        Deque d = new Deque();
+        while (n != 0) {
+            String[] tokens = scan.nextLine().split(" ");
+            switch (tokens[0]) {
             case "pushLeft":
-                deque.pushLeft(Integer.parseInt(line[1]));
-                //System.out.println(deque);
-                deque.forEach(e -> System.out.println(e));
+                d.pushleft(Integer.parseInt(tokens[1]));
+                d.print();
                 break;
             case "pushRight":
-                deque.pushRight(Integer.parseInt(line[1]));
-                //System.out.println(deque);
-                deque.forEach(e -> System.out.println(e));
+                d.pushright(Integer.parseInt(tokens[1]));
+                d.print();
+                break;
+            case "size":
+                System.out.println(d.size());
                 break;
             case "popLeft":
-                if (deque.popLeft() != null) {
-                    //System.out.println(deque);
-                    deque.forEach(e -> System.out.println(e));
+                if (d.size() == 0) {
+                    System.out.println("Deck is empty");
+                } else {
+                    d.popleft();
+                    d.print();
                 }
                 break;
             case "popRight":
-                if (deque.popRight() != null) {
-                    //System.out.println(deque);
-                    deque.forEach(e -> System.out.println(e));
+                if (d.size() == 0) {
+                    System.out.println("Deck is empty");
+                } else {
+                    d.popright();
+                    d.print();
                 }
                 break;
-            case "size":
-                System.out.println(deque.getSize());
+            default :
                 break;
-            default:
-                break;
-
             }
+            n--;
         }
     }
 }

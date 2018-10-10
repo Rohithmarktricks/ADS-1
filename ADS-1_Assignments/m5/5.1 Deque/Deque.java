@@ -1,118 +1,131 @@
-import java.util.Iterator;
-public class Deque<E> implements Iterable<E> {
-	private class Node {
-		E data;
-		Node next;
-		Node() {
-			//unused Constructor.
-		}
-		Node(E data) {
-			this.data = data;
-		}
-		Node(E data, Node nextNode) {
-			this.data = data;
-			this.next = nextNode;
-		}
-	}
-	Deque() {
-		//unused constructor.
-	}
-	Node head, tail;
-	int size;
-	public void pushLeft(E data) {
-		if (head == null) {
-			head = new Node(data);
-			tail = head;
-			size++;
-			return;
-		}
-		Node node = new Node(data, head);
-		head = node;
-		size++;
-	}
-	public void pushRight(E data) {
-		if (head == null) {
-			head = new Node(data);
-			tail = head;
-			size++;
-			return;
-		}
-		Node node = new Node(data, null);
-		tail.next = node;
-		tail = node;
-		size++;
-	}
-	public int getSize() {
-		return size;
-	}
-	public E popLeft() {
-		if (head != null) {
-			Node temp = head;
-			head = head.next;
-			size--;
-			return temp.data;
-		}
-		System.out.println("Deck is empty");
-		return null;
-	}
-	public E popRight() {
-		if (head != null) {
-			Node temp = head;
-			while (temp.next != tail) {
-				temp = temp.next;
-			}
-			E element = temp.next.data;
-			temp.next = null;
-			tail = temp;
-			size--;
-			return element;
-		} else {
-			System.out.println("Deck is empty");
-			return null;
-		}
-	}
-	public boolean isEmpty() {
-		return size == 0;
-	}
-	/*public String toString() {
-		if (head != null) {
-			String str = "[";
-			Node realHead = head;
-			while (realHead.next != null) {
-				str += (realHead.data) + ", ";
-				realHead = realHead.next;
-			};
-			str += (realHead.data) + "]";
-			return str;
-		} else {
-			return "[]";
-		}
-	}*/
+/*
+ * Java Program to Implement Queue using Linked List
+ */
+import java.util.*;
+/*  Class Node  */
+class Node {
+    protected int data;
+    protected Node link;
 
-	public Iterator iterator() {
-		return new MyIterator(head);
-	}
+    /*  Constructor  */
+    public Node() {
+        link = null;
+        data = 0;
+    }
+    /*  Constructor  */
+    public Node(int d, Node n) {
+        data = d;
+        link = n;
+    }
+    /*  Function to set link to next Node  */
+    public void setLink(Node n) {
+        link = n;
+    }
+    /*  Function to set data to current Node  */
+    public void setData(int d) {
+        data = d;
+    }
+    /*  Function to get link to next node  */
+    public Node getLink() {
+        return link;
+    }
+    /*  Function to get data from current Node  */
+    public int getData() {
+        return data;
+    }
+}
 
-	private class MyIterator implements Iterator {
-		Node current;
+/**
+ * Class for deque.
+ *
+ * @param      <Item>  The item
+ */
+class Deque {
+    protected Node front, rear;
+    public int size;
+    /* Constructor */
+    public Deque() {
+        front = null;
+        rear = null;
+        size = 0;
+    }
+    /*  Function to check if queue is empty */
+    public boolean isEmpty() {
+        return (front == null && rear == null);
+    }
+    /*  Function to get the size of the queue */
+    public int size() {
+        return size;
+    }
 
-		public MyIterator(Node first) {
-			current = first;
-		}
-
-		public boolean hasNext() {
-			return current !=  null;
-		}
-
-		public void remove() {
-
-		}
-
-		public E next() {
-			E data = current.data;
-			current = current.next;
-			return data;
-		}
-	}
-
+    public void pushleft(int data) {
+        Node nptr = new Node(data, null);
+        size++ ;
+        if (front == null) {
+            front = nptr;
+            rear = front;
+        } else {
+            nptr.setLink(front);
+            front = nptr;
+        }
+    }
+    public void pushright(int data) {
+        Node nptr = new Node(data, null);
+        size++ ;
+        if (rear == null) {
+            rear = nptr;
+            front = rear;
+        } else {
+            rear.setLink(nptr);
+            rear = nptr;
+        }
+    }
+    public int popleft() {
+        if (isEmpty() ) {
+            //System.out.println("Deck is empty");
+        } else {
+            Node ptr = front;
+            front = ptr.getLink();
+            if (front == null) {
+                rear = null;
+            }
+            size-- ;
+            return ptr.getData();
+        } return -1;
+    }
+    public int popright() {
+        if (isEmpty()) {
+            //System.out.println("No elements to pop");
+        } else {
+            int ele = rear.getData();
+            Node s = front;
+            Node t = front;
+            while (s != rear) {
+                t = s;
+                s = s.getLink();
+            }
+            rear = t;
+            rear.setLink(null);
+            size --;
+            return ele;
+        }
+        return -1;
+    }
+    public void print() {
+        String s = "[";
+        if (size == 0)
+        {
+            System.out.println("[]");
+            return ;
+        }
+        Node ptr = front;
+        while (ptr != rear.getLink() )
+        {
+            s += ptr.getData()+", ";
+            ptr = ptr.getLink();
+        }
+        s = s.substring(0, s.length() - 2);
+        s += "]";
+        System.out.println(s);
+    }
 }
