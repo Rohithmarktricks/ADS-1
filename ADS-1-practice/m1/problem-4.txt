@@ -1,0 +1,8 @@
+Weighted Quick Union with path compression:
+Idea is to flatten the tree, so the complexity can be reduced while using find().
+
+2,3,5,6 cannot possibly occur during the execution of weighted quick union with path compression.
+2 is not possible ------------------ As it is not joining tree with small weight to large weight.
+3 is not possible for the same above reason.
+5 is not possible as it forms a loop in the tree.
+6 is not possible as it forms a loop in the tree.

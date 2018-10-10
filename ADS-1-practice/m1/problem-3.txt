@@ -1,0 +1,2 @@
+Weighted Quick union:
+Tree cannot be build from the above mentioned values using back tracing. Because, the weight of tree at node '6' is less than the weight at node '5'. Here, the lower weighted tree should be added to the higher one. But from the given values, tree was constructed against the rule. Hence, the tree cannot be constructed by weighted quick union.
