@@ -18,7 +18,7 @@ final class Solution {
         Scanner sc = new Scanner(System.in);
         String[] input = sc.nextLine().split(" ");
         SymbolTable<String, Integer> st = new
-            SymbolTable<String, Integer>(input.length);
+        SymbolTable<String, Integer>(input.length);
         for (int i = 0; i < input.length; i++) {
             st.put(input[i], i);
         }
