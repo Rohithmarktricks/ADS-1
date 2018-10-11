@@ -1,0 +1,4 @@
+Starting audit...
+[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m16/16.1 BST/BinarySearchTree.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
