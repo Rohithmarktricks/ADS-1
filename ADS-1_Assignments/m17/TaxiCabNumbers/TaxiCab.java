@@ -1,11 +1,11 @@
-import java.util.*;
+import java.util.Scanner;
 class CubeSum implements Comparable<CubeSum> {
     long sum;
     long i;
     long j;
 
     public CubeSum(long i, long j) {
-        this.sum = i*i*i + j*j*j;
+        this.sum = i * i * i + j * j * j;
         this.i = i;
         this.j = j;
     }
@@ -24,11 +24,11 @@ class CubeSum implements Comparable<CubeSum> {
 
 
 class TaxiCab {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int m = sc.nextInt();
-		MinPQ<CubeSum> pq = new MinPQ<CubeSum>();
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        MinPQ<CubeSum> pq = new MinPQ<CubeSum>();
         for (int i = 1; i <= 1000; i++) {
             pq.insert(new CubeSum(i, i));
         }
@@ -38,26 +38,27 @@ class TaxiCab {
         // for (k < n; k++) {
         int p = 1;
         int k = 0;
-    	while (!pq.isEmpty()) {
-    		CubeSum c = pq.delMin();
-        	if (prev.sum() == c.sum()) {
-        		p++;
-        		if (p == m)
-    			{
-    				sum = c.sum();
+        while (!pq.isEmpty()) {
+            CubeSum c = pq.delMin();
+            if (prev.sum() == c.sum()) {
+                p++;
+                if (p == m) {
+                    sum = c.sum();
 
-    				if (++k == n) break;
-	        	}
-        	}
-        	else {
-        		p = 1;
-        	}
-        	prev = c;
-        	if (c.j < 1500)
-            	pq.insert(new CubeSum(c.i, c.j + 1));
-        	// }
+                    if (++k == n) {
+                        break;
+                    }
+                }
+            } else {
+                p = 1;
+            }
+            prev = c;
+            if (c.j < 1500) {
+                pq.insert(new CubeSum(c.i, c.j + 1));
+            }
+            // }
         }
         System.out.println(sum);
 
-	}
+    }
 }
