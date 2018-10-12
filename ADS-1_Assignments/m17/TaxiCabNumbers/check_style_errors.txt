@@ -1,8 +1,2 @@
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:29:8: Unused @param tag for 'i'. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:31:33: Expected @param tag for 'i1'. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:45:8: Unused @param tag for 'j'. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:47:33: Expected @param tag for 'j1'. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:72:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 5 errors.

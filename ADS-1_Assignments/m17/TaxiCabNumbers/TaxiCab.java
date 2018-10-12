@@ -26,7 +26,7 @@ class CubeSum implements Comparable<CubeSum> {
     /**
      * Sets i.
      *
-     * @param      i     { parameter_description }
+     * @param      i1     { parameter_description }
      */
     public void setI(final long i1) {
         this.i = i1;
@@ -42,7 +42,7 @@ class CubeSum implements Comparable<CubeSum> {
     /**
      * Sets the j.
      *
-     * @param      j     { parameter_description }
+     * @param      j1     { parameter_description }
      */
     public void setJ(final long j1) {
         this.j = j1;
@@ -69,7 +69,7 @@ class CubeSum implements Comparable<CubeSum> {
      * @param      i1    I 1
      * @param      j1    The j 1
      */
-    public CubeSum(final long i1, final long j1) {
+    CubeSum(final long i1, final long j1) {
         this.sum = i1 * i1 * i1 + j1 * j1 * j1;
         setI(i1);
         setJ(j1);
