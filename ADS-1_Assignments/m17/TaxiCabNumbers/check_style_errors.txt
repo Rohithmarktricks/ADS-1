@@ -1,18 +1,8 @@
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:31:22: Parameter i should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:31:27: 'i' hides a field. [HiddenField]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:47:22: Parameter j should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:47:27: 'j' hides a field. [HiddenField]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:63:24: Parameter sum should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:63:29: 'sum' hides a field. [HiddenField]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:69:8: Unused @param tag for 'i'. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:70:8: Unused @param tag for 'j'. [JavadocMethod]
+[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:29:8: Unused @param tag for 'i'. [JavadocMethod]
+[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:31:33: Expected @param tag for 'i1'. [JavadocMethod]
+[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:45:8: Unused @param tag for 'j'. [JavadocMethod]
+[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:47:33: Expected @param tag for 'j1'. [JavadocMethod]
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:72:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:72:31: Expected @param tag for 'i1'. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:72:46: Expected @param tag for 'j1'. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:77: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:84:26: Parameter that should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:116: Class TaxiCab should be declared as final. [FinalClass]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:123: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 5 errors.

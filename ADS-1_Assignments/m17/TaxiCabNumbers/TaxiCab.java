@@ -28,8 +28,8 @@ class CubeSum implements Comparable<CubeSum> {
      *
      * @param      i     { parameter_description }
      */
-    public void setI(long i) {
-        this.i = i;
+    public void setI(final long i1) {
+        this.i = i1;
     }
     /**
      * Gets the j.
@@ -44,8 +44,8 @@ class CubeSum implements Comparable<CubeSum> {
      *
      * @param      j     { parameter_description }
      */
-    public void setJ(long j) {
-        this.j = j;
+    public void setJ(final long j1) {
+        this.j = j1;
     }
     /**
      * Gets the sum.
@@ -58,16 +58,16 @@ class CubeSum implements Comparable<CubeSum> {
     /**
      * Sets the sum.
      *
-     * @param      sum   The sum
+     * @param      sum1   The sum
      */
-    public void setSum(long sum) {
-        this.sum = sum;
+    public void setSum(final long sum1) {
+        this.sum = sum1;
     }
     /**
      * Constructs the object.
      *
-     * @param      i     { parameter_description }
-     * @param      j     { parameter_description }
+     * @param      i1    I 1
+     * @param      j1    The j 1
      */
     public CubeSum(final long i1, final long j1) {
         this.sum = i1 * i1 * i1 + j1 * j1 * j1;
@@ -75,13 +75,13 @@ class CubeSum implements Comparable<CubeSum> {
         setJ(j1);
     }
     /**
-     * compareTo
+     * compareTo.
      *
      * @param      that  The that
      *
      * @return     { int value of comparision. }
      */
-    public int compareTo(CubeSum that) {
+    public int compareTo(final CubeSum that) {
         if (this.getSum() < that.getSum()) {
             return -1;
         }
@@ -113,7 +113,7 @@ class CubeSum implements Comparable<CubeSum> {
 /**
  * Class for taxi cab.
  */
-class TaxiCab {
+final class TaxiCab {
     /**
      * Constructs the object.
      */
@@ -121,7 +121,7 @@ class TaxiCab {
         //unused.
     }
     /**
-     * { function_description }
+     * Main function.
      *
      * @param      args  The arguments
      */
