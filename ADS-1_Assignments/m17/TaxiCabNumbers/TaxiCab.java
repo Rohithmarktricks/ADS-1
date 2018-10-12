@@ -28,8 +28,10 @@ class TaxiCab {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
+        final int thou = 1000;
+        final int fifteen = 1500;
         MinPQ<CubeSum> pq = new MinPQ<CubeSum>();
-        for (int i = 1; i <= 1000; i++) {
+        for (int i = 1; i <= thou; i++) {
             pq.insert(new CubeSum(i, i));
         }
         // int i = 0;
@@ -53,7 +55,7 @@ class TaxiCab {
                 p = 1;
             }
             prev = c;
-            if (c.j < 1500) {
+            if (c.j < fifteen) {
                 pq.insert(new CubeSum(c.i, c.j + 1));
             }
             // }

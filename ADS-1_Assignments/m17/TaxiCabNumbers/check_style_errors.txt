@@ -25,7 +25,5 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:26: Missing a Javadoc comment. [JavadocType]
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:26:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:27:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:32:30: '1000' is a magic number. [MagicNumber]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m17/TaxiCabNumbers/TaxiCab.java:56:23: '1500' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 26 errors.
