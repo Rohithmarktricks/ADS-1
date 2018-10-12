@@ -3,28 +3,63 @@ import java.util.Scanner;
  * Class for cube sum.
  */
 class CubeSum implements Comparable<CubeSum> {
+    /**
+     * Sum.
+     */
     private long sum;
+    /**
+     * Var i.
+     */
     private long i;
+    /**
+     * Var j.
+     */
     private long j;
+    /**
+     * Gets i.
+     *
+     * @return     I.
+     */
     public long getI() {
         return i;
     }
-
+    /**
+     * Sets i.
+     *
+     * @param      i     { parameter_description }
+     */
     public void setI(long i) {
         this.i = i;
     }
+    /**
+     * Gets the j.
+     *
+     * @return     The j.
+     */
     public long getJ() {
         return j;
     }
-
+    /**
+     * Sets the j.
+     *
+     * @param      j     { parameter_description }
+     */
     public void setJ(long j) {
         this.j = j;
     }
-
+    /**
+     * Gets the sum.
+     *
+     * @return     The sum.
+     */
     public long getSum() {
         return sum;
     }
-
+    /**
+     * Sets the sum.
+     *
+     * @param      sum   The sum
+     */
     public void setSum(long sum) {
         this.sum = sum;
     }
