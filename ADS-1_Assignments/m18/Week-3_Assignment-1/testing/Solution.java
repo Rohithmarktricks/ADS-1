@@ -102,6 +102,7 @@ public final class Solution {
 	 * @param      args  The arguments
 	 */
 	public static void main(final String[] args) {
+		BinaryST bst = new BinaryST();
 		Scanner scan = new Scanner(System.in);
 
 		int stockSize = Integer.parseInt(scan.nextLine());
@@ -109,25 +110,22 @@ public final class Solution {
 		ArrayList<Stock> worstTradingCompanies = new ArrayList<Stock>();
 
 		// hour 1
-		for (int limit = 0; limit <= 6; limit++) {
+		MinPQ<Stock> hour1Min = new MinPQ<Stock>();
+		MaxPQ<Stock> hour1Max = new MaxPQ<Stock>();
 
-			MinPQ<Stock> hour1Min = new MinPQ<Stock>();
-			MaxPQ<Stock> hour1Max = new MaxPQ<Stock>();
-
-			for (int i = 0; i < stockSize; i++) {
-				String[] inputs = scan.nextLine().split(",");
-				Stock temp = new Stock(inputs[0], Double.parseDouble(inputs[1]));
-				hour1Max.insert(temp);
-				hour1Min.insert(temp);
-			}
-
-			hour1Max.printMaxPQ(bestTradingCompanies);
-			hour1Min.printMinPQ(worstTradingCompanies);
+		for (int i = 0; i < stockSize; i++) {
+			String[] inputs = scan.nextLine().split(",");
+			Stock temp = new Stock(inputs[0], Double.parseDouble(inputs[1]));
+			hour1Max.insert(temp);
+			hour1Min.insert(temp);
 		}
+
+		hour1Max.printMaxPQ(bestTradingCompanies);
+		hour1Min.printMinPQ(worstTradingCompanies);
 
 
 		// hour 2
-		/*MinPQ<Stock> hour2Min = new MinPQ<Stock>();
+		MinPQ<Stock> hour2Min = new MinPQ<Stock>();
 		MaxPQ<Stock> hour2Max = new MaxPQ<Stock>();
 
 		for (int i = 0; i < stockSize; i++) {
@@ -203,8 +201,8 @@ public final class Solution {
 		while (scan.hasNext()) {
 			Integer nQueries = scan.nextInt();
 			String[] queries = scan.nextLine().split(",");
-
-		}*/
+			//System.out.println();
+		}
 	}
 
 }
