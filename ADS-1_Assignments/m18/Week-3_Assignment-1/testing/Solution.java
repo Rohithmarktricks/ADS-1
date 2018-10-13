@@ -109,22 +109,25 @@ public final class Solution {
 		ArrayList<Stock> worstTradingCompanies = new ArrayList<Stock>();
 
 		// hour 1
-		MinPQ<Stock> hour1Min = new MinPQ<Stock>();
-		MaxPQ<Stock> hour1Max = new MaxPQ<Stock>();
+		for (int limit = 0; limit <= 6; limit++) {
 
-		for (int i = 0; i < stockSize; i++) {
-			String[] inputs = scan.nextLine().split(",");
-			Stock temp = new Stock(inputs[0], Double.parseDouble(inputs[1]));
-			hour1Max.insert(temp);
-			hour1Min.insert(temp);
+			MinPQ<Stock> hour1Min = new MinPQ<Stock>();
+			MaxPQ<Stock> hour1Max = new MaxPQ<Stock>();
+
+			for (int i = 0; i < stockSize; i++) {
+				String[] inputs = scan.nextLine().split(",");
+				Stock temp = new Stock(inputs[0], Double.parseDouble(inputs[1]));
+				hour1Max.insert(temp);
+				hour1Min.insert(temp);
+			}
+
+			hour1Max.printMaxPQ(bestTradingCompanies);
+			hour1Min.printMinPQ(worstTradingCompanies);
 		}
-
-		hour1Max.printMaxPQ(bestTradingCompanies);
-		hour1Min.printMinPQ(worstTradingCompanies);
 
 
 		// hour 2
-		MinPQ<Stock> hour2Min = new MinPQ<Stock>();
+		/*MinPQ<Stock> hour2Min = new MinPQ<Stock>();
 		MaxPQ<Stock> hour2Max = new MaxPQ<Stock>();
 
 		for (int i = 0; i < stockSize; i++) {
@@ -195,5 +198,13 @@ public final class Solution {
 
 		hour6Max.printMaxPQ(bestTradingCompanies);
 		hour6Min.printMinPQ(worstTradingCompanies);
+
+
+		while (scan.hasNext()) {
+			Integer nQueries = scan.nextInt();
+			String[] queries = scan.nextLine().split(",");
+
+		}*/
 	}
+
 }
