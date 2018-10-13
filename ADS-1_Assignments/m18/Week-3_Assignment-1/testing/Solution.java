@@ -105,8 +105,8 @@ public final class Solution {
 		Scanner scan = new Scanner(System.in);
 
 		int stockSize = Integer.parseInt(scan.nextLine());
-		ArrayList<Stock> bestPerformers = new ArrayList<Stock>();
-		ArrayList<Stock> worstPerformers = new ArrayList<Stock>();
+		ArrayList<Stock> bestTradingCompanies = new ArrayList<Stock>();
+		ArrayList<Stock> worstTradingCompanies = new ArrayList<Stock>();
 
 		// hour 1
 		MinPQ<Stock> hour1Min = new MinPQ<Stock>();
@@ -119,8 +119,8 @@ public final class Solution {
 			hour1Min.insert(temp);
 		}
 
-		hour1Max.print5(bestPerformers);
-		hour1Min.print5(worstPerformers);
+		hour1Max.printMaxPQ(bestTradingCompanies);
+		hour1Min.printMinPQ(worstTradingCompanies);
 
 
 		// hour 2
@@ -134,8 +134,8 @@ public final class Solution {
 			hour2Min.insert(temp);
 		}
 
-		hour2Max.print5(bestPerformers);
-		hour2Min.print5(worstPerformers);
+		hour2Max.printMaxPQ(bestTradingCompanies);
+		hour2Min.printMinPQ(worstTradingCompanies);
 
 		// hour 3
 		MinPQ<Stock> hour3Min = new MinPQ<Stock>();
@@ -148,8 +148,8 @@ public final class Solution {
 			hour3Min.insert(temp);
 		}
 
-		hour3Max.print5(bestPerformers);
-		hour3Min.print5(worstPerformers);
+		hour3Max.printMaxPQ(bestTradingCompanies);
+		hour3Min.printMinPQ(worstTradingCompanies);
 
 		// hour 4
 		MinPQ<Stock> hour4Min = new MinPQ<Stock>();
@@ -163,8 +163,8 @@ public final class Solution {
 			hour4Min.insert(temp);
 		}
 
-		hour4Max.print5(bestPerformers);
-		hour4Min.print5(worstPerformers);
+		hour4Max.printMaxPQ(bestTradingCompanies);
+		hour4Min.printMinPQ(worstTradingCompanies);
 
 		// hour 5
 		MinPQ<Stock> hour5Min = new MinPQ<Stock>();
@@ -178,8 +178,8 @@ public final class Solution {
 			hour5Min.insert(temp);
 		}
 
-		hour5Max.print5(bestPerformers);
-		hour5Min.print5(worstPerformers);
+		hour5Max.printMaxPQ(bestTradingCompanies);
+		hour5Min.printMinPQ(worstTradingCompanies);
 
 		// hour 6
 		MinPQ<Stock> hour6Min = new MinPQ<Stock>();
@@ -193,7 +193,7 @@ public final class Solution {
 			hour6Min.insert(temp);
 		}
 
-		hour6Max.print5(bestPerformers);
-		hour6Min.print5(worstPerformers);
+		hour6Max.printMaxPQ(bestTradingCompanies);
+		hour6Min.printMinPQ(worstTradingCompanies);
 	}
 }

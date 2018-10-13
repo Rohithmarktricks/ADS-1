@@ -177,7 +177,7 @@ public class MaxPQ<Key> {
     /**
     * Prints the maximum 5 of the PQ.
     */
-    public void print5(final ArrayList<Key> best) {
+    public void printMaxPQ(final ArrayList<Key> best) {
         for (int i = 1; i <= 5; i++) {
             Key temp = delMax();
             System.out.println(temp);

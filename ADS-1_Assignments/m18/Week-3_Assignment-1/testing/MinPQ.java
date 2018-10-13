@@ -164,7 +164,7 @@ public class MinPQ<Key> {
     /**
      * Prints the minimum 5 of the PQ.
      */
-    public void print5(final ArrayList<Key> worst) {
+    public void printMinPQ(final ArrayList<Key> worst) {
         for (int i = 1; i <= 5; i++) {
             Key temp = delMin();
             System.out.println(temp);
