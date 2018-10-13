@@ -182,19 +182,19 @@ public final class Solution {
 		hour5Min.printMinPQ(worstTradingCompanies);
 
 		// Leftover hour.
-		MinPQ<Stock> hour6Min = new MinPQ<Stock>();
-		MaxPQ<Stock> hour6Max = new MaxPQ<Stock>();
+		MinPQ<Stock> finalHourMin = new MinPQ<Stock>();
+		MaxPQ<Stock> finalHourMax = new MaxPQ<Stock>();
 
 		for (int i = 0; i < stockSize; i++) {
 			String[] inputs = scan.nextLine().split(",");
 			Stock temp = new Stock(inputs[0],
 			                       Double.parseDouble(inputs[1]));
-			hour6Max.insert(temp);
-			hour6Min.insert(temp);
+			finalHourMax.insert(temp);
+			finalHourMin.insert(temp);
 		}
 
-		hour6Max.printMaxPQ(bestTradingCompanies);
-		hour6Min.printMinPQ(worstTradingCompanies);
+		finalHourMax.printMaxPQ(bestTradingCompanies);
+		finalHourMin.printMinPQ(worstTradingCompanies);
 	}
 
 }
