@@ -108,7 +108,7 @@ public final class Solution {
 		ArrayList<Stock> bestTradingCompanies = new ArrayList<Stock>();
 		ArrayList<Stock> worstTradingCompanies = new ArrayList<Stock>();
 
-		// hour 1
+		// first hour.
 		MinPQ<Stock> hour1Min = new MinPQ<Stock>();
 		MaxPQ<Stock> hour1Max = new MaxPQ<Stock>();
 
@@ -123,7 +123,7 @@ public final class Solution {
 		hour1Min.printMinPQ(worstTradingCompanies);
 
 
-		// hour 2
+		// 2nd hour.
 		MinPQ<Stock> hour2Min = new MinPQ<Stock>();
 		MaxPQ<Stock> hour2Max = new MaxPQ<Stock>();
 
@@ -137,7 +137,7 @@ public final class Solution {
 		hour2Max.printMaxPQ(bestTradingCompanies);
 		hour2Min.printMinPQ(worstTradingCompanies);
 
-		// hour 3
+		// 3rd hour.
 		MinPQ<Stock> hour3Min = new MinPQ<Stock>();
 		MaxPQ<Stock> hour3Max = new MaxPQ<Stock>();
 
@@ -151,7 +151,7 @@ public final class Solution {
 		hour3Max.printMaxPQ(bestTradingCompanies);
 		hour3Min.printMinPQ(worstTradingCompanies);
 
-		// hour 4
+		// 4th hour.
 		MinPQ<Stock> hour4Min = new MinPQ<Stock>();
 		MaxPQ<Stock> hour4Max = new MaxPQ<Stock>();
 
@@ -166,7 +166,7 @@ public final class Solution {
 		hour4Max.printMaxPQ(bestTradingCompanies);
 		hour4Min.printMinPQ(worstTradingCompanies);
 
-		// hour 5
+		// 5th hour.
 		MinPQ<Stock> hour5Min = new MinPQ<Stock>();
 		MaxPQ<Stock> hour5Max = new MaxPQ<Stock>();
 
@@ -181,7 +181,7 @@ public final class Solution {
 		hour5Max.printMaxPQ(bestTradingCompanies);
 		hour5Min.printMinPQ(worstTradingCompanies);
 
-		// hour 6
+		// Leftover hour.
 		MinPQ<Stock> hour6Min = new MinPQ<Stock>();
 		MaxPQ<Stock> hour6Max = new MaxPQ<Stock>();
 
@@ -196,5 +196,5 @@ public final class Solution {
 		hour6Max.printMaxPQ(bestTradingCompanies);
 		hour6Min.printMinPQ(worstTradingCompanies);
 	}
-	
+
 }
