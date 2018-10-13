@@ -162,7 +162,9 @@ public class MinPQ<Key> {
         pq[j] = swap;
     }
     /**
-     * Prints the minimum 5 of the PQ.
+     * { prints the elements of MinPQ }
+     *
+     * @param      worst  The worst
      */
     public void printMinPQ(final ArrayList<Key> worst) {
         for (int i = 1; i <= 5; i++) {
