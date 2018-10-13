@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m18/Week-3_Assignment-1/testing/MinPQ.java:164: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m18/Week-3_Assignment-1/testing/MinPQ.java:170:30: '5' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 2 errors.

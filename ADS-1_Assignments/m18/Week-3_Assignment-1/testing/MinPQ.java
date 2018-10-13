@@ -162,12 +162,12 @@ public class MinPQ<Key> {
         pq[j] = swap;
     }
     /**
-     * { prints the elements of MinPQ }
+     * { prints the elements of MinPQ. }.
      *
      * @param      worst  The worst
      */
     public void printMinPQ(final ArrayList<Key> worst) {
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= (2 + 2 + 1); i++) {
             Key temp = delMin();
             System.out.println(temp);
             worst.add(temp);
