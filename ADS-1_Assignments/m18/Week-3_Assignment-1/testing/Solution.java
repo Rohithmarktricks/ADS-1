@@ -102,7 +102,6 @@ public final class Solution {
 	 * @param      args  The arguments
 	 */
 	public static void main(final String[] args) {
-		BinaryST bst = new BinaryST();
 		Scanner scan = new Scanner(System.in);
 
 		int stockSize = Integer.parseInt(scan.nextLine());
@@ -196,13 +195,6 @@ public final class Solution {
 
 		hour6Max.printMaxPQ(bestTradingCompanies);
 		hour6Min.printMinPQ(worstTradingCompanies);
-
-
-		while (scan.hasNext()) {
-			Integer nQueries = scan.nextInt();
-			String[] queries = scan.nextLine().split(",");
-			//System.out.println();
-		}
 	}
-
+	
 }
