@@ -1,3 +1,0 @@
-[master e1a9932] "ads1_m19_a1: 3/3 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
- 1 file changed, 1 insertion(+), 1 deletion(-)
-fatal: unable to access 'https://github.com/Rohithmarktricks/ADS-1.git/': gnutls_handshake() failed: An unexpected TLS packet was received.
