@@ -149,8 +149,11 @@ public class BinarySearchTree {
 	 * @return     integer value.
 	 */
 	private int size(Node x) {
-		if (x == null) return 0;
-		else return x.size;
+		if (x == null) {
+			return 0;
+		} else {
+			return x.size;
+		}
 	}
 	/**
 	 * put.
@@ -274,115 +277,150 @@ public class BinarySearchTree {
 	 * @return     { description_of_the_return_value }
 	 */
 	public Book floor(Book key) {
-        if (key == null) throw new IllegalArgumentException("argument to floor() is null");
-        if (isEmpty()) throw new NoSuchElementException("calls floor() with empty symbol table");
-        Node x = floor(root, key);
-        if (x == null) return null;
-        else return x.key;
-    }
-    /**
-     * floor.
-     *
-     * @param      x     { parameter_description }
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private Node floor(Node x, Book key) {
-        if (x == null) return null;
-        int cmp = key.compareTo(x.key);
-        if (cmp == 0) return x;
-        if (cmp <  0) return floor(x.left, key);
-        Node t = floor(x.right, key);
-        if (t != null) return t;
-        else return x;
-    }
-    /**
-     * ceiling.
-     *
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public Book ceiling(Book key) {
-        if (key == null) throw new IllegalArgumentException("argument to ceiling() is null");
-        if (isEmpty()) throw new NoSuchElementException("calls ceiling() with empty symbol table");
-        Node x = ceiling(root, key);
-        if (x == null) return null;
-        else return x.key;
-    }
-    /**
-     * ceiling.
-     *
-     * @param      x     { parameter_description }
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private Node ceiling(Node x, Book key) {
-        if (x == null) return null;
-        int cmp = key.compareTo(x.key);
-        if (cmp == 0) return x;
-        if (cmp < 0) {
-            Node t = ceiling(x.left, key);
-            if (t != null) return t;
-            else return x;
-        }
-        return ceiling(x.right, key);
-    }
-    /**
-     * select.
-     *
-     * @param      k     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public Book select(int k) {
-        if (k < 0 || k >= size()) {
-            throw new IllegalArgumentException("argument to select() is invalid: " + k);
-        }
-        Node x = select(root, k);
-        return x.key;
-    }
-    /**
-     * Return key of rank k.
-     *
-     * @param      x     { parameter_description }
-     * @param      k     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private Node select(Node x, int k) {
-        if (x == null) return null;
-        int t = size(x.left);
-        if      (t > k) return select(x.left,  k);
-        else if (t < k) return select(x.right, k-t-1);
-        else            return x;
-    }
-    /**
-     * rank.
-     *
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int rank(Book key) {
-        if (key == null) throw new IllegalArgumentException("argument to rank() is null");
-        return rank(key, root);
-    }
-    /**
-     * Number of keys in the subtree less than key.
-     *
-     * @param      key   The key
-     * @param      x     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private int rank(Book key, Node x) {
-        if (x == null) return 0;
-        int cmp = key.compareTo(x.key);
-        if      (cmp < 0) return rank(key, x.left);
-        else if (cmp > 0) return 1 + size(x.left) + rank(key, x.right);
-        else              return size(x.left);
-    }
+		if (key == null) {
+			throw new IllegalArgumentException("argument to floor() is null");
+		}
+		if (isEmpty()) {
+			throw new NoSuchElementException("calls floor() with empty symbol table");
+		}
+		Node x = floor(root, key);
+		if (x == null) {
+			return null;
+		} else {
+			return x.key;
+		}
+	}
+	/**
+	 * floor.
+	 *
+	 * @param      x     { parameter_description }
+	 * @param      key   The key
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	private Node floor(Node x, Book key) {
+		if (x == null) {
+			return null;
+		}
+		int cmp = key.compareTo(x.key);
+		if (cmp == 0) {
+			return x;
+		}
+		if (cmp <  0) {
+			return floor(x.left, key);
+		}
+		Node t = floor(x.right, key);
+		if (t != null) {
+			return t;
+		} else {
+			return x;
+		}
+	}
+	/**
+	 * ceiling.
+	 *
+	 * @param      key   The key
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public Book ceiling(Book key) {
+		if (key == null) {
+			throw new IllegalArgumentException("argument to ceiling() is null");
+		}
+		if (isEmpty()) {
+			throw new NoSuchElementException("calls ceiling() with empty symbol table");
+		}
+		Node x = ceiling(root, key);
+		if (x == null) {
+			return null;
+		} else {
+			return x.key;
+		}
+
+	}
+	/**
+	 * ceiling.
+	 *
+	 * @param      x     { parameter_description }
+	 * @param      key   The key
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	private Node ceiling(Node x, Book key) {
+		if (x == null) {return null;}
+		int cmp = key.compareTo(x.key);
+		if (cmp == 0) {return x;}
+		if (cmp < 0) {
+			Node t = ceiling(x.left, key);
+			if (t != null) {return t;}
+			else {
+				return x;
+			}
+		}
+		return ceiling(x.right, key);
+	}
+	/**
+	 * select.
+	 *
+	 * @param      k     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public Book select(int k) {
+		if (k < 0 || k >= size()) {
+			throw new IllegalArgumentException("argument to select() is invalid: " + k);
+		}
+		Node x = select(root, k);
+		return x.key;
+	}
+	/**
+	 * Return key of rank k.
+	 *
+	 * @param      x     { parameter_description }
+	 * @param      k     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	private Node select(Node x, int k) {
+		if (x == null) {return null;}
+		int t = size(x.left);
+		if      (t > k) {return select(x.left,  k);}
+		else if (t < k) {return select(x.right, k - t - 1);}
+		else {return x;}
+	}
+	/**
+	 * rank.
+	 *
+	 * @param      key   The key
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public int rank(Book key) {
+		if (key == null) {
+			throw new IllegalArgumentException("argument to rank() is null");
+		}
+		return rank(key, root);
+	}
+	/**
+	 * Number of keys in the subtree less than key.
+	 *
+	 * @param      key   The key
+	 * @param      x     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	private int rank(Book key, Node x) {
+		if (x == null) {
+			return 0;
+		}
+		int cmp = key.compareTo(x.key);
+		if (cmp < 0) {
+			return rank(key, x.left);
+		} else if (cmp > 0) {
+			return 1 + size(x.left) + rank(key, x.right);
+
+		} else {
+			return size(x.left);
+		}
+	}
 }
