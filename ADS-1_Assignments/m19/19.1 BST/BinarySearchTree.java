@@ -111,14 +111,14 @@ public class BinarySearchTree {
          *
          * @param      k     { parameter_description }
          * @param      v     { parameter_description }
-         * @param      size  The size
+         * @param      size1  The size
          */
-        Node(final Book k, final Integer v, final int size) {
+        Node(final Book k, final Integer v, final int size1) {
             this.key = k;
             this.value = v;
             this.left = null;
             this.right = null;
-            this.size = size;
+            this.size = size1;
         }
     }
     /**
@@ -289,7 +289,8 @@ public class BinarySearchTree {
             throw new IllegalArgumentException("argument to floor() is null");
         }
         if (isEmpty()) {
-            throw new NoSuchElementException("calls floor() with empty symbol table");
+            throw new NoSuchElementException(
+                "calls floor() with empty symbol table");
         }
         Node x = floor(root, key);
         if (x == null) {
@@ -336,7 +337,8 @@ public class BinarySearchTree {
             throw new IllegalArgumentException("argument to ceiling() is null");
         }
         if (isEmpty()) {
-            throw new NoSuchElementException("calls ceiling() with empty symbol table");
+            throw new NoSuchElementException(
+                "calls ceiling() with empty symbol table");
         }
         Node x = ceiling(root, key);
         if (x == null) {
@@ -381,7 +383,8 @@ public class BinarySearchTree {
      */
     public Book select(final int k) {
         if (k < 0 || k >= size()) {
-            throw new IllegalArgumentException("argument to select() is invalid: " + k);
+            throw new IllegalArgumentException(
+                "argument to select() is invalid: " + k);
         }
         Node x = select(root, k);
         return x.key;

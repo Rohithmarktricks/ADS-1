@@ -1,7 +1,2 @@
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m19/19.1 BST/BinarySearchTree.java:116:55: 'size' hides a field. [HiddenField]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m19/19.1 BST/BinarySearchTree.java:292: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m19/19.1 BST/BinarySearchTree.java:339: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m19/19.1 BST/BinarySearchTree.java:384: Line is longer than 80 characters (found 88). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
