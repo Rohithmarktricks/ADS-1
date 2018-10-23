@@ -334,7 +334,8 @@ public class BinarySearchTree {
 	 */
 	public Book ceiling(final Book key) {
 		if (key == null) {
-			throw new IllegalArgumentException("argument to ceiling() is null");
+			throw
+			new IllegalArgumentException("argument to ceiling() is null");
 		}
 		if (isEmpty()) {
 			throw new NoSuchElementException(
@@ -452,7 +453,8 @@ public class BinarySearchTree {
 	 */
 	public void deleteMin() {
 		if (isEmpty()) {
-			throw new NoSuchElementException("Symbol table underflow");
+			throw
+			new NoSuchElementException("Symbol table underflow");
 		}
 
 		root = deleteMin(root);
@@ -465,7 +467,7 @@ public class BinarySearchTree {
 	 *
 	 * @return     { Node }
 	 */
-	private Node deleteMin(Node x) {
+	private Node deleteMin(final Node x) {
 		if (x.left == null) {
 			return x.right;
 		}
@@ -479,7 +481,8 @@ public class BinarySearchTree {
 	 */
 	public void deleteMax() {
 		if (isEmpty()) {
-			throw new NoSuchElementException("Symbol table underflow");
+			throw
+			new NoSuchElementException("Symbol table underflow");
 		}
 		root = deleteMax(root);
 	}
@@ -491,7 +494,7 @@ public class BinarySearchTree {
 	 *
 	 * @return     Node.
 	 */
-	private Node deleteMax(Node x) {
+	private Node deleteMax(final Node x) {
 		if (x.right == null) {
 			return x.left;
 		}
@@ -505,9 +508,10 @@ public class BinarySearchTree {
 	 *
 	 * @param      key   The key
 	 */
-	public void delete(Book key) {
+	public void delete(final Book key) {
 		if (key == null) {
-			throw new IllegalArgumentException("calls delete() with a null key");
+			throw
+			new IllegalArgumentException("calls delete() with a null key");
 		}
 		root = delete(root, key);
 	}
@@ -520,7 +524,7 @@ public class BinarySearchTree {
 	 *
 	 * @return     { Node. }
 	 */
-	private Node delete(Node x, Book key) {
+	private Node delete(Node x, final Book key) {
 		if (x == null) {
 			return null;
 		}

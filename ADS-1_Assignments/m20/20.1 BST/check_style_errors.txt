@@ -1,14 +1,8 @@
 Starting audit...
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:289: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:337: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:455: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:468:32: Parameter x should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:482: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:494:32: Parameter x should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:508:28: Parameter key should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:510: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:523:29: Parameter x should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:523:37: Parameter key should be final. [FinalParameters]
+[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:338: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:514: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m20/20.1 BST/BinarySearchTree.java:527:29: Parameter x should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 5 errors.
