@@ -447,6 +447,9 @@ public class BinarySearchTree {
 		}
 	}
 
+	/**
+	 * Deletes Min.
+	 */
 	public void deleteMin() {
 		if (isEmpty()) {
 			throw new NoSuchElementException("Symbol table underflow");
@@ -455,6 +458,13 @@ public class BinarySearchTree {
 		root = deleteMin(root);
 	}
 
+	/**
+	 * Deletes the minimum ........helper function.
+	 *
+	 * @param      x     { Node }
+	 *
+	 * @return     { Node }
+	 */
 	private Node deleteMin(Node x) {
 		if (x.left == null) {
 			return x.right;
@@ -463,6 +473,10 @@ public class BinarySearchTree {
 		x.size = size(x.left) + size(x.right) + 1;
 		return x;
 	}
+
+	/**
+	 * Deletes the maximum.
+	 */
 	public void deleteMax() {
 		if (isEmpty()) {
 			throw new NoSuchElementException("Symbol table underflow");
@@ -470,6 +484,13 @@ public class BinarySearchTree {
 		root = deleteMax(root);
 	}
 
+	/**
+	 * deletes the maximum ..helper function.
+	 *
+	 * @param      x     Node.
+	 *
+	 * @return     Node.
+	 */
 	private Node deleteMax(Node x) {
 		if (x.right == null) {
 			return x.left;
@@ -478,6 +499,12 @@ public class BinarySearchTree {
 		x.size = size(x.left) + size(x.right) + 1;
 		return x;
 	}
+
+	/**
+	 * Deletes the Key.
+	 *
+	 * @param      key   The key
+	 */
 	public void delete(Book key) {
 		if (key == null) {
 			throw new IllegalArgumentException("calls delete() with a null key");
@@ -485,7 +512,14 @@ public class BinarySearchTree {
 		root = delete(root, key);
 	}
 
-
+	/**
+	 * Deletes the key helper function.
+	 *
+	 * @param      x     { Node }
+	 * @param      key   The key
+	 *
+	 * @return     { Node. }
+	 */
 	private Node delete(Node x, Book key) {
 		if (x == null) {
 			return null;
