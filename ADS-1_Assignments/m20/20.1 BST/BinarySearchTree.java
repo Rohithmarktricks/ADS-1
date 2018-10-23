@@ -67,6 +67,11 @@ class Book {
 			return 0;
 		}
 	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		String s = "";
 		s = name + ", " + author + ", " + price;
@@ -106,13 +111,14 @@ public class BinarySearchTree {
 		 *
 		 * @param      k     { parameter_description }
 		 * @param      v     { parameter_description }
+		 * @param      size1  The size
 		 */
-		Node(final Book k, final Integer v, final int size) {
+		Node(final Book k, final Integer v, final int size1) {
 			this.key = k;
 			this.value = v;
 			this.left = null;
 			this.right = null;
-			this.size = size;
+			this.size = size1;
 		}
 	}
 	/**
@@ -148,9 +154,12 @@ public class BinarySearchTree {
 	 *
 	 * @return     integer value.
 	 */
-	private int size(Node x) {
-		if (x == null) return 0;
-		else return x.size;
+	private int size(final Node x) {
+		if (x == null) {
+			return 0;
+		} else {
+			return x.size;
+		}
 	}
 	/**
 	 * put.
@@ -222,7 +231,8 @@ public class BinarySearchTree {
 	 */
 	public Book min() {
 		if (isEmpty()) {
-			throw new NoSuchElementException("calls min() with empty symbol table");
+			throw new NoSuchElementException(
+			    "calls min() with empty symbol table");
 		}
 		return min(root).key;
 	}
@@ -233,7 +243,7 @@ public class BinarySearchTree {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	private Node min(Node x) {
+	private Node min(final Node x) {
 		if (x.left == null) {
 			return x;
 		} else {
@@ -248,7 +258,8 @@ public class BinarySearchTree {
 	 */
 	public Book max() {
 		if (isEmpty()) {
-			throw new NoSuchElementException("calls max() with empty symbol table");
+			throw new NoSuchElementException(
+			    "calls max() with empty symbol table");
 		}
 		return max(root).key;
 	}
@@ -259,7 +270,7 @@ public class BinarySearchTree {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	private Node max(Node x) {
+	private Node max(final Node x) {
 		if (x.right == null) {
 			return x;
 		} else {
@@ -273,12 +284,20 @@ public class BinarySearchTree {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public Book floor(Book key) {
-		if (key == null) throw new IllegalArgumentException("argument to floor() is null");
-		if (isEmpty()) throw new NoSuchElementException("calls floor() with empty symbol table");
+	public Book floor(final Book key) {
+		if (key == null) {
+			throw new IllegalArgumentException("argument to floor() is null");
+		}
+		if (isEmpty()) {
+			throw new NoSuchElementException(
+			    "calls floor() with empty symbol table");
+		}
 		Node x = floor(root, key);
-		if (x == null) return null;
-		else return x.key;
+		if (x == null) {
+			return null;
+		} else {
+			return x.key;
+		}
 	}
 	/**
 	 * floor.
@@ -288,14 +307,23 @@ public class BinarySearchTree {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	private Node floor(Node x, Book key) {
-		if (x == null) return null;
+	private Node floor(final Node x, final Book key) {
+		if (x == null) {
+			return null;
+		}
 		int cmp = key.compareTo(x.key);
-		if (cmp == 0) return x;
-		if (cmp <  0) return floor(x.left, key);
+		if (cmp == 0) {
+			return x;
+		}
+		if (cmp <  0) {
+			return floor(x.left, key);
+		}
 		Node t = floor(x.right, key);
-		if (t != null) return t;
-		else return x;
+		if (t != null) {
+			return t;
+		} else {
+			return x;
+		}
 	}
 	/**
 	 * ceiling.
@@ -304,12 +332,21 @@ public class BinarySearchTree {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public Book ceiling(Book key) {
-		if (key == null) throw new IllegalArgumentException("argument to ceiling() is null");
-		if (isEmpty()) throw new NoSuchElementException("calls ceiling() with empty symbol table");
+	public Book ceiling(final Book key) {
+		if (key == null) {
+			throw new IllegalArgumentException("argument to ceiling() is null");
+		}
+		if (isEmpty()) {
+			throw new NoSuchElementException(
+			    "calls ceiling() with empty symbol table");
+		}
 		Node x = ceiling(root, key);
-		if (x == null) return null;
-		else return x.key;
+		if (x == null) {
+			return null;
+		} else {
+			return x.key;
+		}
+
 	}
 	/**
 	 * ceiling.
@@ -319,14 +356,21 @@ public class BinarySearchTree {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	private Node ceiling(Node x, Book key) {
-		if (x == null) return null;
+	private Node ceiling(final Node x, final Book key) {
+		if (x == null) {
+			return null;
+		}
 		int cmp = key.compareTo(x.key);
-		if (cmp == 0) return x;
+		if (cmp == 0) {
+			return x;
+		}
 		if (cmp < 0) {
 			Node t = ceiling(x.left, key);
-			if (t != null) return t;
-			else return x;
+			if (t != null) {
+				return t;
+			} else {
+				return x;
+			}
 		}
 		return ceiling(x.right, key);
 	}
@@ -337,9 +381,10 @@ public class BinarySearchTree {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public Book select(int k) {
+	public Book select(final int k) {
 		if (k < 0 || k >= size()) {
-			throw new IllegalArgumentException("argument to select() is invalid: " + k);
+			throw new IllegalArgumentException(
+			    "argument to select() is invalid: " + k);
 		}
 		Node x = select(root, k);
 		return x.key;
@@ -352,12 +397,18 @@ public class BinarySearchTree {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	private Node select(Node x, int k) {
-		if (x == null) return null;
+	private Node select(final Node x, final int k) {
+		if (x == null) {
+			return null;
+		}
 		int t = size(x.left);
-		if      (t > k) return select(x.left,  k);
-		else if (t < k) return select(x.right, k - t - 1);
-		else            return x;
+		if (t > k) {
+			return select(x.left,  k);
+		} else if (t < k) {
+			return select(x.right, k - t - 1);
+		} else {
+			return x;
+		}
 	}
 	/**
 	 * rank.
@@ -366,8 +417,11 @@ public class BinarySearchTree {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int rank(Book key) {
-		if (key == null) throw new IllegalArgumentException("argument to rank() is null");
+	public int rank(final Book key) {
+		if (key == null) {
+			throw new IllegalArgumentException(
+			    "argument to rank() is null");
+		}
 		return rank(key, root);
 	}
 	/**
@@ -378,49 +432,77 @@ public class BinarySearchTree {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	private int rank(Book key, Node x) {
-		if (x == null) return 0;
+	private int rank(final Book key, final Node x) {
+		if (x == null) {
+			return 0;
+		}
 		int cmp = key.compareTo(x.key);
-		if      (cmp < 0) return rank(key, x.left);
-		else if (cmp > 0) return 1 + size(x.left) + rank(key, x.right);
-		else              return size(x.left);
+		if (cmp < 0) {
+			return rank(key, x.left);
+		} else if (cmp > 0) {
+			return 1 + size(x.left) + rank(key, x.right);
+
+		} else {
+			return size(x.left);
+		}
 	}
+
 	public void deleteMin() {
-		if (isEmpty()) throw new NoSuchElementException("Symbol table underflow");
+		if (isEmpty()) {
+			throw new NoSuchElementException("Symbol table underflow");
+		}
+
 		root = deleteMin(root);
 	}
 
 	private Node deleteMin(Node x) {
-		if (x.left == null) return x.right;
+		if (x.left == null) {
+			return x.right;
+		}
 		x.left = deleteMin(x.left);
 		x.size = size(x.left) + size(x.right) + 1;
 		return x;
 	}
 	public void deleteMax() {
-		if (isEmpty()) throw new NoSuchElementException("Symbol table underflow");
+		if (isEmpty()) {
+			throw new NoSuchElementException("Symbol table underflow");
+		}
 		root = deleteMax(root);
 	}
 
 	private Node deleteMax(Node x) {
-		if (x.right == null) return x.left;
+		if (x.right == null) {
+			return x.left;
+		}
 		x.right = deleteMax(x.right);
 		x.size = size(x.left) + size(x.right) + 1;
 		return x;
 	}
 	public void delete(Book key) {
-		if (key == null) throw new IllegalArgumentException("calls delete() with a null key");
+		if (key == null) {
+			throw new IllegalArgumentException("calls delete() with a null key");
+		}
 		root = delete(root, key);
 	}
 
+
 	private Node delete(Node x, Book key) {
-		if (x == null) return null;
+		if (x == null) {
+			return null;
+		}
 
 		int cmp = key.compareTo(x.key);
-		if      (cmp < 0) x.left  = delete(x.left,  key);
-		else if (cmp > 0) x.right = delete(x.right, key);
-		else {
-			if (x.right == null) return x.left;
-			if (x.left  == null) return x.right;
+		if (cmp < 0) {
+			x.left  = delete(x.left,  key);
+		} else if (cmp > 0) {
+			x.right = delete(x.right, key);
+		} else {
+			if (x.right == null) {
+				return x.left;
+			}
+			if (x.left  == null) {
+				return x.right;
+			}
 			Node t = x;
 			x = min(t.right);
 			x.right = deleteMin(t.right);
@@ -428,6 +510,7 @@ public class BinarySearchTree {
 		}
 		x.size = size(x.left) + size(x.right) + 1;
 		return x;
-	}
 
+	}
 }
+
