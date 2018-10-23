@@ -1,4 +1,4 @@
-public class LinkedList<E> {
+public class LInkedList<E> {
 
 	private class Node {
 		E data;
@@ -17,7 +17,7 @@ public class LinkedList<E> {
 	}
 	private Node head, tail;
 
-	// LinkedList () {
+	// LInkedList () {
 	// 	head = new Node();
 	// }
 	//
@@ -87,7 +87,7 @@ public class LinkedList<E> {
 	}
 
 	public static void main(String[] args) {
-		LinkedList<Integer> l = new LinkedList<>();
+		LInkedList<Integer> l = new LInkedList<>();
 		l.addAtHead(1);
 		l.addAtHead(2);
 		l.addAtHead(3);

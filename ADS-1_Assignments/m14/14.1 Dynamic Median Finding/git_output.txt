@@ -1,0 +1,50 @@
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+	modified:   ../../../ADS-1-practice/LinkedList/New LinkedList in class/LInkedList.java
+	modified:   ../../m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/git_output.txt
+	modified:   ../../m10/10.1 LinkedList using Recursion/10.1 LinkedList using Recursion/result/score.json
+	modified:   ../../m12/Assignment-1/git_output.txt
+	modified:   "../../m13\\/13.1 isMinHeap/git_output.txt"
+	modified:   ../14.2 student reservation system/git_output.txt
+	modified:   ../../m15/15.1 BinarySearchSymbolTable/git_output.txt
+	modified:   ../../m15/15.1 BinarySearchSymbolTable/result/score.json
+	modified:   ../../m16/16.1 BST/git_output.txt
+	modified:   ../../m17/TaxiCabNumbers/git_output.txt
+	modified:   ../../m17/TaxiCabNumbers/result/score.json
+	modified:   ../../m19/19.1 BST/git_output.txt
+	modified:   ../../m19/19.1 BST/result/score.json
+	modified:   ../../m5/5.1 Deque/git_output.txt
+	modified:   ../../m5/5.1 Deque/result/score.json
+	modified:   ../../m5/5.2 Josephus Problem/git_output.txt
+	modified:   ../../m5/5.2 Josephus Problem/result/score.json
+
+Untracked files:
+	../../../ADS-1-practice/Basic Sorting Algorithms/Priority Queue/
+	../../../ADS-1-practice/BinarySearchTree/
+	../../../ADS-1-practice/LinkedList/New LinkedList in class/LInkedList$Node.class
+	../../../ADS-1-practice/LinkedList/New LinkedList in class/LInkedList.class
+	../../../ADS-1-practice/Memoization/Memoization.class
+	../../../ADS-1-practice/m13/
+	../../m11/
+	"../../m13\\/13.1 isMinHeap.zip"
+	"../../m13\\/13.1 isMinHeap/out.txt"
+	../14.1 Dynamic Median Finding.zip
+	../14.2 student reservation system.zip
+	../14.2 student reservation system/md5/score.txt
+	../14.2 student reservation system/result/
+	../../m15/15.1 BinarySearchSymbolTable.zip
+	../../m16/16.1 BST.zip
+	../../m16/16.1 BST/md5/score.txt
+	../../m16/16.1 BST/result/
+	../../m17/TaxiCabNumbers.zip
+	../../m19/19.1 BST.zip
+	../../../Dynamic/
+	../../../Genetic Algorithm/
+
+no changes added to commit
+To https://github.com/Rohithmarktricks/ADS-1.git
+   183d826..dd2f29e  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.

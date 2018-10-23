@@ -446,4 +446,76 @@ public class BinarySearchTree {
             return size(x.left);
         }
     }
+
+    public void deleteMin() {
+        if (isEmpty()) {
+            throw new NoSuchElementException("Symbol table underflow");
+        }
+
+        root = deleteMin(root);
+    }
+
+    private Node deleteMin(Node x) {
+        if (x.left == null) {
+            return x.right;
+        }
+        x.left = deleteMin(x.left);
+        x.size = size(x.left) + size(x.right) + 1;
+        return x;
+    }
+    public void deleteMax() {
+        if (isEmpty()) {
+            throw new NoSuchElementException("Symbol table underflow");
+        }
+        root = deleteMax(root);
+    }
+
+    private Node deleteMax(Node x) {
+        if (x.right == null) {
+            return x.left;
+        }
+        x.right = deleteMax(x.right);
+        x.size = size(x.left) + size(x.right) + 1;
+        return x;
+    }
+    public void delete(Book key) {
+        if (key == null) {
+            throw new IllegalArgumentException("calls delete() with a null key");
+        }
+        root = delete(root, key);
+    }
+
+    private Node delete(Node x, Book key) {
+        if (x == null) {
+            return null;
+        }
+
+    }
+
+    private Node delete(Node x, Book key) {
+        if (x == null) {
+            return null;
+        }
+
+        int cmp = key.compareTo(x.key);
+        if (cmp < 0) {
+            x.left  = delete(x.left,  key);
+        } else if {
+        (cmp > 0) x.right = delete(x.right, key);
+        } else {
+            if (x.right == null) {
+                return x.left;
+            }
+            if (x.left  == null) {
+                return x.right;
+            }
+            Node t = x;
+            x = min(t.right);
+            x.right = deleteMin(t.right);
+            x.left = t.left;
+        }
+        x.size = size(x.left) + size(x.right) + 1;
+        return x;
+    }
 }
+

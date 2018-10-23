@@ -1,0 +1,4 @@
+[master d5576a2] "ads1_m14_a2: 0/6 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
+ 2 files changed, 2 insertions(+)
+ create mode 100644 ADS-1_Assignments/m14/14.2 student reservation system/md5/score.txt
+ create mode 100644 ADS-1_Assignments/m14/14.2 student reservation system/result/score.json

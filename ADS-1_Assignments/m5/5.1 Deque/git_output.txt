@@ -1,0 +1,10 @@
+[master 2056c42] "ads1_m5_a1: 5/5 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 6 files changed, 6336 insertions(+), 1392209 deletions(-)
+ rewrite ADS-1_Assignments/m5/5.1 Deque/Deque.class (99%)
+ rewrite ADS-1_Assignments/m5/5.1 Deque/Deque.java (99%)
+ create mode 100644 ADS-1_Assignments/m5/5.1 Deque/Node.class
+ rewrite ADS-1_Assignments/m5/5.1 Deque/Solution.class (100%)
+ rewrite ADS-1_Assignments/m5/5.1 Deque/Solution.java (60%)
+To https://github.com/Rohithmarktricks/ADS-1.git
+   ba904da..2056c42  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.

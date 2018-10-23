@@ -1,0 +1,7 @@
+[master abe4a5b] "ads1_m5_a2: 5/5 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 2 files changed, 2 insertions(+)
+ create mode 100644 ADS-1_Assignments/m5/5.2 Josephus Problem/md5/score.txt
+ create mode 100644 ADS-1_Assignments/m5/5.2 Josephus Problem/result/score.json
+To https://github.com/Rohithmarktricks/ADS-1.git
+   8af35de..abe4a5b  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
