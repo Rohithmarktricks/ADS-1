@@ -33,7 +33,5 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:152:25: Parameter x should be final. [FinalParameters]
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:152:33: Parameter key should be final. [FinalParameters]
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:153: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:171: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:183: Line is longer than 80 characters (found 94). [LineLength]
 Audit done.
-Checkstyle ends with 36 errors.
+Checkstyle ends with 34 errors.

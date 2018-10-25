@@ -168,24 +168,11 @@ public class SequentialSearchST<Key, Value> {
      */
     public Iterable<Key> keys()  {
         Queue<Key> queue = new Queue<Key>();
-        for (Node x = first; x != null; x = x.next)
+        for (Node x = first; x != null; x = x.next) {
+            f
             queue.enqueue(x.key);
+        }
         return queue;
     }
 
-
-    // /**
-    //  * Unit tests the {@code SequentialSearchST} data type.
-    //  *
-    //  * @param args the command-line arguments
-    //  */
-    // public static void main(String[] args) {
-    //     SequentialSearchST<String, Integer> st = new SequentialSearchST<String, Integer>();
-    //     for (int i = 0; !StdIn.isEmpty(); i++) {
-    //         String key = StdIn.readString();
-    //         st.put(key, i);
-    //     }
-    //     for (String s : st.keys())
-    //         StdOut.println(s + " " + st.get(s));
-    // }
 }
