@@ -1,56 +1,8 @@
-/******************************************************************************
- *  Compilation:  javac SequentialSearchST.java
- *  Execution:    java SequentialSearchST
- *  Dependencies: StdIn.java StdOut.java
- *  Data files:   https://algs4.cs.princeton.edu/31elementary/tinyST.txt
- *
- *  Symbol table implementation with sequential search in an
- *  unordered linked list of key-value pairs.
- *
- *  % more tinyST.txt
- *  S E A R C H E X A M P L E
- *
- *  % java SequentialSearchST < tiny.txt
- *  L 11
- *  P 10
- *  M 9
- *  X 7
- *  H 5
- *  C 4
- *  R 3
- *  A 8
- *  E 12
- *  S 0
- *
- ******************************************************************************/
-
 /**
- *  The {@code SequentialSearchST} class represents an (unordered)
- *  symbol table of generic key-value pairs.
- *  It supports the usual <em>put</em>, <em>get</em>, <em>contains</em>,
- *  <em>delete</em>, <em>size</em>, and <em>is-empty</em> methods.
- *  It also provides a <em>keys</em> method for iterating over all of the keys.
- *  A symbol table implements the <em>associative array</em> abstraction:
- *  when associating a value with a key that is already in the symbol table,
- *  the convention is to replace the old value with the new value.
- *  The class also uses the convention that values cannot be {@code null}. Setting the
- *  value associated with a key to {@code null} is equivalent to deleting the key
- *  from the symbol table.
- *  <p>
- *  This implementation uses a singly-linked list and sequential search.
- *  It relies on the {@code equals()} method to test whether two keys
- *  are equal. It does not call either the {@code compareTo()} or
- *  {@code hashCode()} method.
- *  The <em>put</em> and <em>delete</em> operations take linear time; the
- *  <em>get</em> and <em>contains</em> operations takes linear time in the worst case.
- *  The <em>size</em>, and <em>is-empty</em> operations take constant time.
- *  Construction takes constant time.
- *  <p>
- *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/31elementary">Section 3.1</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ * Class for sequential search st.
  *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
+ * @param      <Key>    The key
+ * @param      <Value>  The value
  */
 public class SequentialSearchST<Key, Value> {
     private int n;           // number of key-value pairs
@@ -85,7 +37,8 @@ public class SequentialSearchST<Key, Value> {
 
     /**
      * Is this symbol table empty?
-     * @return {@code true} if this symbol table is empty and {@code false} otherwise
+     * @return {@code true} if this
+     * symbol table is empty and {@code false} otherwise
      */
     public boolean isEmpty() {
         return size() == 0;
@@ -94,20 +47,22 @@ public class SequentialSearchST<Key, Value> {
     /**
      * Does this symbol table contain the given key?
      * @param key the key
-     * @return {@code true} if this symbol table contains {@code key} and
+     * @return {@code true} if this
+     * symbol table contains {@code key} and
      *     {@code false} otherwise
      */
-    public boolean contains(Key key) {
+    public boolean contains(final Key key) {
         return get(key) != null;
     }
 
     /**
      * Returns the value associated with the given key.
      * @param key the key
-     * @return the value associated with the given key if the key is in the symbol table
-     *     and {@code null} if the key is not in the symbol table
+     * @return the value associated with the given key
+     * if the key is in the symbol table
+     * and {@code null} if the key is not in the symbol table
      */
-    public Value get(Key key) {
+    public Value get(final Key key) {
         for (Node x = first; x != null; x = x.next) {
             if (key.equals(x.key))
                 return x.val;
@@ -116,13 +71,15 @@ public class SequentialSearchST<Key, Value> {
     }
 
     /**
-     * Inserts the key-value pair into the symbol table, overwriting the old value
+     * Inserts the key-value pair into the symbol table,
+     * overwriting the old value
      * with the new value if the key is already in the symbol table.
-     * If the value is {@code null}, this effectively deletes the key from the symbol table.
+     * If the value is {@code null},
+     * this effectively deletes the key from the symbol table.
      * @param key the key
      * @param val the value
      */
-    public void put(Key key, Value val) {
+    public void put(final Key key, final Value val) {
         if (val == null) {
             delete(key);
             return;
@@ -143,7 +100,7 @@ public class SequentialSearchST<Key, Value> {
      * (if the key is in the symbol table).
      * @param key the key
      */
-    public void delete(Key key) {
+    public void delete(final Key key) {
         first = delete(first, key);
     }
 
