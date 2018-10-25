@@ -8,18 +8,27 @@ public class SequentialSearchST<Key, Value> {
     /**
      * Number of Key-Value pairs.
      */
-    private int n;           // number of key-value pairs
+    private int n;           // number of key-value pairs.
     /**
-     * Node for sequential Search
+     * Node for sequential Search.
      */
-    private Node first;      // the linked list of key-value pairs
+    private Node first;      // the linked list of key-value pairs.
 
     /**
      * Class for node.
      */
     private class Node {
+        /**
+         * Key.
+         */
         private Key key;
+        /**
+         * Value.
+         */
         private Value val;
+        /**
+         * Next node.
+         */
         private Node next;
 
         /**

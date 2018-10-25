@@ -1,8 +1,4 @@
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:12: First sentence should end with a period. [JavadocStyle]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:21:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:22:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:23:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:32:9: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:41:9: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
