@@ -29,9 +29,5 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:125:21: Parameter key should be final. [FinalParameters]
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:125:30: Parameter val should be final. [FinalParameters]
 [ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:146:24: Parameter key should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:152:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:152:25: Parameter x should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:152:33: Parameter key should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS-1/ADS-1_Assignments/m22/22.1 Ransom Note/SequentialSearchST.java:153: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 34 errors.
+Checkstyle ends with 30 errors.
