@@ -5,19 +5,34 @@
  * @param      <Value>  The value
  */
 public class SequentialSearchST<Key, Value> {
+    /**
+     * Number of Key-Value pairs.
+     */
     private int n;           // number of key-value pairs
+    /**
+     * Node for sequential Search
+     */
     private Node first;      // the linked list of key-value pairs
 
-    // a helper linked list data type
+    /**
+     * Class for node.
+     */
     private class Node {
         private Key key;
         private Value val;
         private Node next;
 
-        public Node(Key key, Value val, Node next)  {
-            this.key  = key;
-            this.val  = val;
-            this.next = next;
+        /**
+         * Constructs the object.
+         *
+         * @param      key1   The key 1
+         * @param      val1   The value 1
+         * @param      next1  The next 1
+         */
+        public Node(final Key key1, final Value val1, final Node next1)  {
+            this.key  = key1;
+            this.val  = val1;
+            this.next = next1;
         }
     }
 
@@ -64,8 +79,9 @@ public class SequentialSearchST<Key, Value> {
      */
     public Value get(final Key key) {
         for (Node x = first; x != null; x = x.next) {
-            if (key.equals(x.key))
+            if (key.equals(x.key)) {
                 return x.val;
+            }
         }
         return null;
     }
