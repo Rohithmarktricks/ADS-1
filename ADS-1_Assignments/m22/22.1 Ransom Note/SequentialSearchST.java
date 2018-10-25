@@ -38,7 +38,7 @@ public class SequentialSearchST<Key, Value> {
          * @param      val1   The value 1
          * @param      next1  The next 1
          */
-        public Node(final Key key1, final Value val1, final Node next1)  {
+        Node(final Key key1, final Value val1, final Node next1)  {
             this.key  = key1;
             this.val  = val1;
             this.next = next1;
