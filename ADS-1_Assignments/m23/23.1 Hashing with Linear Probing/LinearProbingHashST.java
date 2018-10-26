@@ -74,9 +74,7 @@ public class LinearProbingHashST<Key, Value> {
      * @return     { description_of_the_return_value }
      */
     private int hash(Key key) {
-        char ch = (char)key;
-        int k = ch;
-        return (11 * k) % m;
+        return (11 * key.hashCode()) % m;
     }
 
     // resizes the hash table to the given capacity by re-hashing all of the keys
