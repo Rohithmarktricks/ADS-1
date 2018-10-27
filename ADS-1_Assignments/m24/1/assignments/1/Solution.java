@@ -29,7 +29,7 @@ public class Solution {
 				finalRes = res.split("--");
 			} else {
 				System.out.println("Student doesn't exists...");
-				continue;
+				return;
 			}
 			if (check == 1) {
 				System.out.println(finalRes[0]);
