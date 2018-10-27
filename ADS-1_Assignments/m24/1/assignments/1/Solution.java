@@ -27,14 +27,13 @@ public class Solution {
 			int check = Integer.parseInt(queries[2]);
 			if (res != null) {
 				finalRes = res.split("--");
+				if (check == 1) {
+					System.out.println(finalRes[0]);
+				} else if (check == 2) {
+					System.out.println(finalRes[1]);
+				}
 			} else {
 				System.out.println("Student doesn't exists...");
-				return;
-			}
-			if (check == 1) {
-				System.out.println(finalRes[0]);
-			} else if (check == 2) {
-				System.out.println(finalRes[1]);
 			}
 			q--;
 		}
