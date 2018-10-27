@@ -21,19 +21,19 @@ final class Solution {
         BinarySearchTree bst = new BinarySearchTree();
         for (int i = 0; i < n; i++) {
             String[] input = sc.nextLine().split(",");
-            bst.put(new Student(Integer.parseInt(input[0]),
+            bst.put(new LookUpCSV(Integer.parseInt(input[0]),
              input[1],Double.parseDouble(input[2])), input[1]);
         }
         int m = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < m; i++) {
             String[] input = sc.nextLine().split(" ");
             if (input[0].equals("BE")) {
-                bst.getbe(Double.parseDouble(input[1]),
+                bst.getBE(Double.parseDouble(input[1]),
                  Double.parseDouble(input[2]));
             } else if (input[0].equals("LE")) {
-                bst.getle(Double.parseDouble(input[1]));
+                bst.getLE(Double.parseDouble(input[1]));
             } else {
-                bst.getge(Double.parseDouble(input[1]));
+                bst.getGE(Double.parseDouble(input[1]));
             }
         }
     }

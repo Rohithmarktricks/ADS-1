@@ -1,7 +1,7 @@
 /**
- * Class for Student.
+ * Class for LookUpCSV.
  */
-class Student {
+class LookUpCSV {
     /**
      * name.
      */
@@ -21,7 +21,7 @@ class Student {
      * @param      a     { parameter_description }
      * @param      p     { parameter_description }
      */
-    Student(final Integer r, final String n, final Double t) {
+    LookUpCSV(final Integer r, final String n, final Double t) {
         this.name = n;
         this.rollnumber = r;
         this.total = t;
@@ -59,7 +59,7 @@ class Student {
      *
      * @return     { description_of_the_return_value }
      */
-    int compareTo(final Student that) {
+    int compareTo(final LookUpCSV that) {
         if (this.total.compareTo(that.total) >= 0) {
             return 1;
         } else {
@@ -78,7 +78,7 @@ public class BinarySearchTree {
         /**
          * key.
          */
-        private Student key;
+        private LookUpCSV key;
         /**
          * name.
          */
@@ -97,7 +97,7 @@ public class BinarySearchTree {
          * @param      k     { parameter_description }
          * @param      v     { parameter_description }
          */
-        Node(final Student k, final String v) {
+        Node(final LookUpCSV k, final String v) {
             this.key = k;
             this.value = v;
             this.left = null;
@@ -120,7 +120,7 @@ public class BinarySearchTree {
      * @param      key    The key
      * @param      value  The value
      */
-    public void put(final Student key, final String value) {
+    public void put(final LookUpCSV key, final String value) {
         root = put(root, key, value);
     }
     /**
@@ -134,7 +134,7 @@ public class BinarySearchTree {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node put(final Node x, final Student key, final String value) {
+    private Node put(final Node x, final LookUpCSV key, final String value) {
         if (x == null) {
             return new Node(key, value);
         }
@@ -156,42 +156,41 @@ public class BinarySearchTree {
      * @param      k1    The k 1
      * @param      k2    The k 2
      */
-    void get(final Node x, final Double k1, final Double k2) { 
-        if (x == null) { 
-            return; 
-        } 
-        if (k1 < x.key.gettotal()) { 
-            get(x.left, k1, k2); 
-        } 
-        if (k1 <= x.key.gettotal() && k2 >= x.key.gettotal()) { 
-            System.out.println(x.value); 
-        } 
-        if (k2 > x.key.gettotal()) { 
-            get(x.right, k1, k2); 
-        } 
+    void get(final Node x, final Double k1, final Double k2) {
+        if (x == null) {
+            return;
+        }
+        if (k1 < x.key.gettotal()) {
+            get(x.left, k1, k2);
+        }
+        if (k1 <= x.key.gettotal() && k2 >= x.key.gettotal()) {
+            System.out.println(x.value);
+        }
+        if (k2 > x.key.gettotal()) {
+            get(x.right, k1, k2);
+        }
     }
-    void getbe(final Double k1, final Double k2) {
-    	get(root, k1, k2);
+    void getBE(final Double k1, final Double k2) {
+        get(root, k1, k2);
     }
-    void getle(final Double k) {
-    	get(root, 0.0, k);
+    void getLE(final Double k) {
+        get(root, 0.0, k);
     }
-    Double findMax(final Node node) 
-    { 
-        if (node == null) 
-            return 0.0; 
-  
-        Double res = node.key.gettotal(); 
-        Double lres = findMax(node.left); 
-        Double rres = findMax(node.right); 
-  
-        if (lres > res) 
-            res = lres; 
-        if (rres > res) 
-            res = rres; 
-        return res; 
+    Double findMax(final Node node) {
+        if (node == null)
+            return 0.0;
+
+        Double res = node.key.gettotal();
+        Double lres = findMax(node.left);
+        Double rres = findMax(node.right);
+
+        if (lres > res)
+            res = lres;
+        if (rres > res)
+            res = rres;
+        return res;
     }
-    void getge(final Double k) {
-    	get(root, k, findMax(root));
+    void getGE(final Double k) {
+        get(root, k, findMax(root));
     }
 }
