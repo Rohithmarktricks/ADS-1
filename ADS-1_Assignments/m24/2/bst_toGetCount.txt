@@ -1,0 +1,22 @@
+public int getCount(Node root, int low, int high) 
+{ 
+    // Base Case 
+    if(root == null) 
+        return 0; 
+
+    // If current root is in range, then  
+    // include it in count and recur for  
+    // left and right children of it 
+    if(root.key.marks >= low && root.key.marks <= high) 
+        return 1 + this.getCount(root.left, low, high)+ 
+            this.getCount(root.right, low, high); 
+              
+    // If current root is smaller than low,  
+    // then recur for right child 
+    else if(root.data < low) 
+        return this.getCount(root.right, low, high); 
+      
+    // Else recur for left child 
+    else
+        return this.getCount(root.left, low, high);      
+}
