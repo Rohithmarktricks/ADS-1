@@ -1,11 +1,20 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 public class Solution {
-
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
 		//unused.
 	}
-
-	public static void main(String[] args) {
+	/**
+	 * Main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int inp = scan.nextInt();
 		scan.nextLine();
