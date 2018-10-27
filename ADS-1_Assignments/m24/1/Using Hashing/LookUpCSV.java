@@ -23,9 +23,6 @@ class LookUpCSV {
     }
     /**
      * returns total.
-     *
-     * best case: O(1)
-     * worst case: O(1)
      * average case: O(1)
      *
      * @return     toatalmarks.
@@ -34,13 +31,10 @@ class LookUpCSV {
         return this.name;
     }
     /**
-     * returns s3 marks.
-     *
-     * best case: O(1)
-     * worst case: O(1)
+     * returns Student marks.
      * average case: O(1)
      *
-     * @return     s3marks.
+     * @return     student marks.
      */
     public double marks() {
         return this.marks;
