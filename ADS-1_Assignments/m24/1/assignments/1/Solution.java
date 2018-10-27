@@ -19,18 +19,24 @@ public class Solution {
 
 		int q = scan.nextInt();
 		scan.nextLine();
+		String res = "";
+		String[] finalRes = new String[2];
 		while (q > 0) {
 			String[] queries = scan.nextLine().split(" ");
-			String res = ST.get(queries[1]);
+			res = ST.get(queries[1]);
 			int check = Integer.parseInt(queries[2]);
-			String[] finalRes = res.split("--");
+			if (res != null) {
+				finalRes = res.split("--");
+			} else {
+				System.out.println("Student doesn't exists...");
+				continue;
+			}
 			if (check == 1) {
 				System.out.println(finalRes[0]);
 			} else if (check == 2) {
 				System.out.println(finalRes[1]);
 			}
 			q--;
-
 		}
 
 	}
