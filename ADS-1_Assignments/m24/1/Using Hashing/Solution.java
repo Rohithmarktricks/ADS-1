@@ -16,12 +16,12 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
-        LinearProbingHashST<Integer, Studentdetails> hash
+        LinearProbingHashST<Integer, LookUpCSV> hash
             = new LinearProbingHashST();
         while (n > 0) {
             String[] tokens = scan.nextLine().split(",");
             hash.put(Integer.parseInt(tokens[0]),
-                new Studentdetails(tokens[1], Double.parseDouble((tokens[2]))));
+                     new LookUpCSV(tokens[1], Double.parseDouble((tokens[2]))));
             n--;
         }
         int m = Integer.parseInt(scan.nextLine());
@@ -31,7 +31,7 @@ public final class Solution {
                 if (Integer.parseInt(token[2]) == 1) {
                     try {
                         System.out.println(hash.get(Integer.parseInt(token[1]))
-                            .name());
+                                           .name());
                     } catch (Exception e) {
                         System.out.println("Student doesn't exists...");
                     }
@@ -39,7 +39,7 @@ public final class Solution {
                 } else if (Integer.parseInt(token[2]) == 2) {
                     try {
                         System.out.println(hash.get(Integer.parseInt(token[1])).
-                            marks());
+                                           marks());
                     } catch (Exception e) {
                         System.out.println("Student doesn't exists...");
                     }

@@ -1,7 +1,7 @@
 /**
  * Class for details.
  */
-class Studentdetails {
+class LookUpCSV {
     /**
      * name.
      */
@@ -16,7 +16,7 @@ class Studentdetails {
      * @param      name1   The name
      * @param      marks1  The marks
      */
-    Studentdetails(final String name1, final double marks1) {
+    LookUpCSV(final String name1, final double marks1) {
         this.name = name1;
         this.marks = marks1;
 
