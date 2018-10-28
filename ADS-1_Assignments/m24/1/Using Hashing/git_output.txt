@@ -1,6 +1,0 @@
-[master ab6ce56] "m24_a1_1: 4/4 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
- 1 file changed, 1 insertion(+), 1 deletion(-)
- rewrite ADS-1_Assignments/m24/1/Using Hashing/result/score.json (100%)
-To https://github.com/Rohithmarktricks/ADS-1.git
-   d5da240..ab6ce56  master -> master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
