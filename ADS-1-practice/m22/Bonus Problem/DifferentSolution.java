@@ -17,17 +17,17 @@ public class DifferentSolution {
         int hc = 0;
         int ref = 0;
         for (int c = 0; c < creamPrices.length; c++) {
-            if (hashCream.contains(Integer.parseInt(creamPrices[c]))) {
-                hashCream.put(Integer.parseInt(creamPrices[c]), hashCream.get(Integer.parseInt(creamPrices[c]) + 1));
+            if (hashCream.contains(Integer.parseInt(creamPrices[c + 1]))) {
+                hashCream.put(c + 1, hashCream.get(Integer.parseInt(creamPrices[c]) + 1));
             } else {
-                hashCream.put(Integer.parseInt(creamPrices[c]), Integer.parseInt(creamPrices[c]));
+                hashCream.put(c + 1, Integer.parseInt(creamPrices[c]));
             }
         }
 
         for (hc = 0; hc < creamPrices.length; hc++) {
             tempCompareValue = hashCream.get(Integer.parseInt(creamPrices[hc]));
             for (ref = 0; ref < creamPrices.length; ref++) {
-                if (tempCompareValue + hashCream.get(Integer.parseInt(creamPrices[ref])) == money) {
+                if (tempCompareValue + hashCream.get(Integer.parseInt(creamPrices[ref + 1])) == money) {
                     value = true;
                     break;
                 }
