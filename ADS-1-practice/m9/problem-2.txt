@@ -1,0 +1,27 @@
+___
+E A S Y Q U E S T I O N
+    ___
+A E S Y Q U E S T I O N
+        ___
+A E S Y Q U E S T I O N
+		    ___
+A E S Y Q U E S T I O N
+                ___
+A E S Y Q U E S T I O N
+                    ___
+A E S Y Q U E S I T O N
+_______
+A E S Y Q U E S I T N O
+        _______
+A E S Y Q U E S I T N O
+                _______
+A E S Y E Q S U I T N O
+_______________
+A E S Y E Q S U I N O T
+_______________________
+A E E Q S S U Y I N O T
+
+A E E I N O Q S S T U Y
+
+Top-down mergesort: 2, 3, 2, 5, 2, 3, 2, 5, 10, 2, 3, 2, 5, 2, 3, 2, 5, 10, 20, 2, 3, 2, 5, 2, 3, 2, 5, 10, 2, 3, 2, 5, 2, 2, 4, 9, 19, 39.
+Bottom-up mergesort: 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 8, 8, 8, 8, 7, 16, 16, 32, 39.
